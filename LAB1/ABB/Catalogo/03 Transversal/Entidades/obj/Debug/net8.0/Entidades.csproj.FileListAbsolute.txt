@@ -1,0 +1,12 @@
+/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Entidades/bin/Debug/net8.0/Entidades.deps.json
+/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Entidades/bin/Debug/net8.0/Entidades.dll
+/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Entidades/bin/Debug/net8.0/Entidades.pdb
+/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Entidades/obj/Debug/net8.0/Entidades.GeneratedMSBuildEditorConfig.editorconfig
+/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Entidades/obj/Debug/net8.0/Entidades.AssemblyInfoInputs.cache
+/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Entidades/obj/Debug/net8.0/Entidades.AssemblyInfo.cs
+/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Entidades/obj/Debug/net8.0/Entidades.csproj.CoreCompileInputs.cache
+/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Entidades/obj/Debug/net8.0/Entidades.sourcelink.json
+/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Entidades/obj/Debug/net8.0/Entidades.dll
+/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Entidades/obj/Debug/net8.0/refint/Entidades.dll
+/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Entidades/obj/Debug/net8.0/Entidades.pdb
+/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Entidades/obj/Debug/net8.0/ref/Entidades.dll

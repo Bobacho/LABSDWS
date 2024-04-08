@@ -1,0 +1,12 @@
+/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/UtilesWeb/bin/Debug/net8.0/UtilesWeb.deps.json
+/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/UtilesWeb/bin/Debug/net8.0/UtilesWeb.dll
+/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/UtilesWeb/bin/Debug/net8.0/UtilesWeb.pdb
+/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/UtilesWeb/obj/Debug/net8.0/UtilesWeb.GeneratedMSBuildEditorConfig.editorconfig
+/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/UtilesWeb/obj/Debug/net8.0/UtilesWeb.AssemblyInfoInputs.cache
+/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/UtilesWeb/obj/Debug/net8.0/UtilesWeb.AssemblyInfo.cs
+/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/UtilesWeb/obj/Debug/net8.0/UtilesWeb.csproj.CoreCompileInputs.cache
+/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/UtilesWeb/obj/Debug/net8.0/UtilesWeb.sourcelink.json
+/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/UtilesWeb/obj/Debug/net8.0/UtilesWeb.dll
+/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/UtilesWeb/obj/Debug/net8.0/refint/UtilesWeb.dll
+/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/UtilesWeb/obj/Debug/net8.0/UtilesWeb.pdb
+/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/UtilesWeb/obj/Debug/net8.0/ref/UtilesWeb.dll

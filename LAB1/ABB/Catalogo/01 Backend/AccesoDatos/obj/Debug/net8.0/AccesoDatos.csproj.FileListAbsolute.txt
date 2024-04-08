@@ -1,0 +1,16 @@
+/home/luciano/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/bin/Debug/net8.0/AccesoDatos.deps.json
+/home/luciano/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/bin/Debug/net8.0/AccesoDatos.dll
+/home/luciano/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/bin/Debug/net8.0/AccesoDatos.pdb
+/home/luciano/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/bin/Debug/net8.0/Entidades.dll
+/home/luciano/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/bin/Debug/net8.0/Entidades.pdb
+/home/luciano/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/obj/Debug/net8.0/AccesoDatos.csproj.AssemblyReference.cache
+/home/luciano/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/obj/Debug/net8.0/AccesoDatos.GeneratedMSBuildEditorConfig.editorconfig
+/home/luciano/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/obj/Debug/net8.0/AccesoDatos.AssemblyInfoInputs.cache
+/home/luciano/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/obj/Debug/net8.0/AccesoDatos.AssemblyInfo.cs
+/home/luciano/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/obj/Debug/net8.0/AccesoDatos.csproj.CoreCompileInputs.cache
+/home/luciano/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/obj/Debug/net8.0/AccesoDatos.sourcelink.json
+/home/luciano/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/obj/Debug/net8.0/AccesoDatos.csproj.CopyComplete
+/home/luciano/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/obj/Debug/net8.0/AccesoDatos.dll
+/home/luciano/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/obj/Debug/net8.0/refint/AccesoDatos.dll
+/home/luciano/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/obj/Debug/net8.0/AccesoDatos.pdb
+/home/luciano/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/obj/Debug/net8.0/ref/AccesoDatos.dll
