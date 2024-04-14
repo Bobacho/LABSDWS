@@ -759,41 +759,35 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\AULAFISI\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/home/luciano/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\AULAFISI\\LABSDWS\\LAB1\\ABB\\Catalogo\\WebServicesAbb\\WebServicesAbb.csproj",
+      "projectUniqueName": "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/WebServicesAbb/WebServicesAbb.csproj",
       "projectName": "WebServicesAbb",
-      "projectPath": "C:\\Users\\AULAFISI\\LABSDWS\\LAB1\\ABB\\Catalogo\\WebServicesAbb\\WebServicesAbb.csproj",
-      "packagesPath": "C:\\Users\\AULAFISI\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\AULAFISI\\LABSDWS\\LAB1\\ABB\\Catalogo\\WebServicesAbb\\obj\\",
+      "projectPath": "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/WebServicesAbb/WebServicesAbb.csproj",
+      "packagesPath": "/home/luciano/.nuget/packages/",
+      "outputPath": "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/WebServicesAbb/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\AULAFISI\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/luciano/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\AULAFISI\\LABSDWS\\LAB1\\ABB\\Catalogo\\01 Backend\\LogicaNegocio\\LogicaNegocio.csproj": {
-              "projectPath": "C:\\Users\\AULAFISI\\LABSDWS\\LAB1\\ABB\\Catalogo\\01 Backend\\LogicaNegocio\\LogicaNegocio.csproj"
+            "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/01 Backend/LogicaNegocio/LogicaNegocio.csproj": {
+              "projectPath": "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/01 Backend/LogicaNegocio/LogicaNegocio.csproj"
             },
-            "C:\\Users\\AULAFISI\\LABSDWS\\LAB1\\ABB\\Catalogo\\03 Transversal\\Entidades\\Entidades.csproj": {
-              "projectPath": "C:\\Users\\AULAFISI\\LABSDWS\\LAB1\\ABB\\Catalogo\\03 Transversal\\Entidades\\Entidades.csproj"
+            "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Entidades/Entidades.csproj": {
+              "projectPath": "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Entidades/Entidades.csproj"
             }
           }
         }
@@ -802,11 +796,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -845,7 +834,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.103/PortableRuntimeIdentifierGraph.json"
       }
     }
   },
