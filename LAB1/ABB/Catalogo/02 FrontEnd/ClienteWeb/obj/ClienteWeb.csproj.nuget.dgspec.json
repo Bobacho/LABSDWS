@@ -1,33 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/02 FrontEnd/ClienteWeb/ClienteWeb.csproj": {}
+    "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\02 FrontEnd\\ClienteWeb\\ClienteWeb.csproj": {}
   },
   "projects": {
-    "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/AccesoDatos.csproj": {
+    "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\01 Backend\\AccesoDatos\\AccesoDatos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/AccesoDatos.csproj",
+        "projectUniqueName": "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\01 Backend\\AccesoDatos\\AccesoDatos.csproj",
         "projectName": "AccesoDatos",
-        "projectPath": "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/AccesoDatos.csproj",
-        "packagesPath": "/home/luciano/.nuget/packages/",
-        "outputPath": "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/obj/",
+        "projectPath": "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\01 Backend\\AccesoDatos\\AccesoDatos.csproj",
+        "packagesPath": "C:\\Users\\Alexa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\01 Backend\\AccesoDatos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/luciano/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Alexa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Entidades/Entidades.csproj": {
-                "projectPath": "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Entidades/Entidades.csproj"
+              "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\03 Transversal\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\03 Transversal\\Entidades\\Entidades.csproj"
               }
             }
           }
@@ -36,11 +38,26 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.0, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -57,43 +74,45 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.103/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/02 FrontEnd/ClienteWeb/ClienteWeb.csproj": {
+    "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\02 FrontEnd\\ClienteWeb\\ClienteWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/02 FrontEnd/ClienteWeb/ClienteWeb.csproj",
+        "projectUniqueName": "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\02 FrontEnd\\ClienteWeb\\ClienteWeb.csproj",
         "projectName": "ClienteWeb",
-        "projectPath": "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/02 FrontEnd/ClienteWeb/ClienteWeb.csproj",
-        "packagesPath": "/home/luciano/.nuget/packages/",
-        "outputPath": "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/02 FrontEnd/ClienteWeb/obj/",
+        "projectPath": "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\02 FrontEnd\\ClienteWeb\\ClienteWeb.csproj",
+        "packagesPath": "C:\\Users\\Alexa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\02 FrontEnd\\ClienteWeb\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/luciano/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Alexa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/AccesoDatos.csproj": {
-                "projectPath": "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/AccesoDatos.csproj"
+              "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\01 Backend\\AccesoDatos\\AccesoDatos.csproj": {
+                "projectPath": "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\01 Backend\\AccesoDatos\\AccesoDatos.csproj"
               },
-              "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Entidades/Entidades.csproj": {
-                "projectPath": "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Entidades/Entidades.csproj"
+              "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\03 Transversal\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\03 Transversal\\Entidades\\Entidades.csproj"
               },
-              "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Utiles/Utiles.csproj": {
-                "projectPath": "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Utiles/Utiles.csproj"
+              "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\03 Transversal\\UtilesWeb\\UtilesWeb.csproj": {
+                "projectPath": "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\03 Transversal\\UtilesWeb\\UtilesWeb.csproj"
               },
-              "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/UtilesWeb/UtilesWeb.csproj": {
-                "projectPath": "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/UtilesWeb/UtilesWeb.csproj"
+              "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\03 Transversal\\Utiles\\Utiles.csproj": {
+                "projectPath": "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\03 Transversal\\Utiles\\Utiles.csproj"
               }
             }
           }
@@ -102,6 +121,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -126,26 +150,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.103/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Entidades/Entidades.csproj": {
+    "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\03 Transversal\\Entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Entidades/Entidades.csproj",
+        "projectUniqueName": "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\03 Transversal\\Entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Entidades/Entidades.csproj",
-        "packagesPath": "/home/luciano/.nuget/packages/",
-        "outputPath": "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Entidades/obj/",
+        "projectPath": "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\03 Transversal\\Entidades\\Entidades.csproj",
+        "packagesPath": "C:\\Users\\Alexa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\03 Transversal\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/luciano/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Alexa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -158,6 +184,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -179,34 +210,96 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.103/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Utiles/Utiles.csproj": {
+    "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\03 Transversal\\UtilesWeb\\UtilesWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Utiles/Utiles.csproj",
-        "projectName": "Utiles",
-        "projectPath": "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Utiles/Utiles.csproj",
-        "packagesPath": "/home/luciano/.nuget/packages/",
-        "outputPath": "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Utiles/obj/",
+        "projectUniqueName": "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\03 Transversal\\UtilesWeb\\UtilesWeb.csproj",
+        "projectName": "UtilesWeb",
+        "projectPath": "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\03 Transversal\\UtilesWeb\\UtilesWeb.csproj",
+        "packagesPath": "C:\\Users\\Alexa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\03 Transversal\\UtilesWeb\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/luciano/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Alexa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\03 Transversal\\Utiles\\Utiles.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\03 Transversal\\Utiles\\Utiles.csproj",
+        "projectName": "Utiles",
+        "projectPath": "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\03 Transversal\\Utiles\\Utiles.csproj",
+        "packagesPath": "C:\\Users\\Alexa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\03 Transversal\\Utiles\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Alexa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Entidades/Entidades.csproj": {
-                "projectPath": "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Entidades/Entidades.csproj"
+              "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\03 Transversal\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\03 Transversal\\Entidades\\Entidades.csproj"
               }
             }
           }
@@ -215,6 +308,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -236,60 +334,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.103/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/UtilesWeb/UtilesWeb.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/UtilesWeb/UtilesWeb.csproj",
-        "projectName": "UtilesWeb",
-        "projectPath": "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/UtilesWeb/UtilesWeb.csproj",
-        "packagesPath": "/home/luciano/.nuget/packages/",
-        "outputPath": "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/UtilesWeb/obj/",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "/home/luciano/.nuget/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.103/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -14,3 +14,35 @@
 /home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Utiles/bin/Debug/net8.0/Entidades.pdb
 /home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Utiles/obj/Debug/net8.0/Utiles.csproj.AssemblyReference.cache
 /home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Utiles/obj/Debug/net8.0/Utiles.csproj.CopyComplete
+C:\Users\Alexa\OneDrive - Universidad Tecnologica del Peru\Desktop\Nueva carpeta\LABSDWS\LAB1\ABB\Catalogo\03 Transversal\Utiles\bin\Debug\net8.0\Utiles.deps.json
+C:\Users\Alexa\OneDrive - Universidad Tecnologica del Peru\Desktop\Nueva carpeta\LABSDWS\LAB1\ABB\Catalogo\03 Transversal\Utiles\bin\Debug\net8.0\Utiles.dll
+C:\Users\Alexa\OneDrive - Universidad Tecnologica del Peru\Desktop\Nueva carpeta\LABSDWS\LAB1\ABB\Catalogo\03 Transversal\Utiles\bin\Debug\net8.0\Utiles.pdb
+C:\Users\Alexa\OneDrive - Universidad Tecnologica del Peru\Desktop\Nueva carpeta\LABSDWS\LAB1\ABB\Catalogo\03 Transversal\Utiles\bin\Debug\net8.0\Entidades.dll
+C:\Users\Alexa\OneDrive - Universidad Tecnologica del Peru\Desktop\Nueva carpeta\LABSDWS\LAB1\ABB\Catalogo\03 Transversal\Utiles\bin\Debug\net8.0\Entidades.pdb
+C:\Users\Alexa\OneDrive - Universidad Tecnologica del Peru\Desktop\Nueva carpeta\LABSDWS\LAB1\ABB\Catalogo\03 Transversal\Utiles\obj\Debug\net8.0\Utiles.csproj.AssemblyReference.cache
+C:\Users\Alexa\OneDrive - Universidad Tecnologica del Peru\Desktop\Nueva carpeta\LABSDWS\LAB1\ABB\Catalogo\03 Transversal\Utiles\obj\Debug\net8.0\Utiles.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alexa\OneDrive - Universidad Tecnologica del Peru\Desktop\Nueva carpeta\LABSDWS\LAB1\ABB\Catalogo\03 Transversal\Utiles\obj\Debug\net8.0\Utiles.AssemblyInfoInputs.cache
+C:\Users\Alexa\OneDrive - Universidad Tecnologica del Peru\Desktop\Nueva carpeta\LABSDWS\LAB1\ABB\Catalogo\03 Transversal\Utiles\obj\Debug\net8.0\Utiles.AssemblyInfo.cs
+C:\Users\Alexa\OneDrive - Universidad Tecnologica del Peru\Desktop\Nueva carpeta\LABSDWS\LAB1\ABB\Catalogo\03 Transversal\Utiles\obj\Debug\net8.0\Utiles.csproj.CoreCompileInputs.cache
+C:\Users\Alexa\OneDrive - Universidad Tecnologica del Peru\Desktop\Nueva carpeta\LABSDWS\LAB1\ABB\Catalogo\03 Transversal\Utiles\obj\Debug\net8.0\Utiles.sourcelink.json
+C:\Users\Alexa\OneDrive - Universidad Tecnologica del Peru\Desktop\Nueva carpeta\LABSDWS\LAB1\ABB\Catalogo\03 Transversal\Utiles\obj\Debug\net8.0\Utiles.csproj.Up2Date
+C:\Users\Alexa\OneDrive - Universidad Tecnologica del Peru\Desktop\Nueva carpeta\LABSDWS\LAB1\ABB\Catalogo\03 Transversal\Utiles\obj\Debug\net8.0\Utiles.dll
+C:\Users\Alexa\OneDrive - Universidad Tecnologica del Peru\Desktop\Nueva carpeta\LABSDWS\LAB1\ABB\Catalogo\03 Transversal\Utiles\obj\Debug\net8.0\refint\Utiles.dll
+C:\Users\Alexa\OneDrive - Universidad Tecnologica del Peru\Desktop\Nueva carpeta\LABSDWS\LAB1\ABB\Catalogo\03 Transversal\Utiles\obj\Debug\net8.0\Utiles.pdb
+C:\Users\Alexa\OneDrive - Universidad Tecnologica del Peru\Desktop\Nueva carpeta\LABSDWS\LAB1\ABB\Catalogo\03 Transversal\Utiles\obj\Debug\net8.0\ref\Utiles.dll
+C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\03 Transversal\Utiles\bin\Debug\net8.0\Utiles.deps.json
+C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\03 Transversal\Utiles\bin\Debug\net8.0\Utiles.dll
+C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\03 Transversal\Utiles\bin\Debug\net8.0\Utiles.pdb
+C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\03 Transversal\Utiles\bin\Debug\net8.0\Entidades.dll
+C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\03 Transversal\Utiles\bin\Debug\net8.0\Entidades.pdb
+C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\03 Transversal\Utiles\obj\Debug\net8.0\Utiles.csproj.AssemblyReference.cache
+C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\03 Transversal\Utiles\obj\Debug\net8.0\Utiles.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\03 Transversal\Utiles\obj\Debug\net8.0\Utiles.AssemblyInfoInputs.cache
+C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\03 Transversal\Utiles\obj\Debug\net8.0\Utiles.AssemblyInfo.cs
+C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\03 Transversal\Utiles\obj\Debug\net8.0\Utiles.csproj.CoreCompileInputs.cache
+C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\03 Transversal\Utiles\obj\Debug\net8.0\Utiles.sourcelink.json
+C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\03 Transversal\Utiles\obj\Debug\net8.0\Utiles.csproj.Up2Date
+C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\03 Transversal\Utiles\obj\Debug\net8.0\Utiles.dll
+C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\03 Transversal\Utiles\obj\Debug\net8.0\refint\Utiles.dll
+C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\03 Transversal\Utiles\obj\Debug\net8.0\Utiles.pdb
+C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\03 Transversal\Utiles\obj\Debug\net8.0\ref\Utiles.dll

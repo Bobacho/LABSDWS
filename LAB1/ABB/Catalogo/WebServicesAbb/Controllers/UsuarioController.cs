@@ -4,7 +4,8 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using ABB.Catalogo.LogicaNegocio.Core;
+using LogicaNegocio.Core;
+using Entidades.Core;
 
 namespace ABB.Catalogo.WebServicesABB.Controllers
 {
@@ -12,6 +13,7 @@ namespace ABB.Catalogo.WebServicesABB.Controllers
         public IEnumerable<string> Get(){
             List<Usuarios> usuarios = new List<Usuarios>();
             usuarios = new UsuariosLN().ListarUsuarios();
+            return usuarios;
         }
         public string Get(int id)
         {

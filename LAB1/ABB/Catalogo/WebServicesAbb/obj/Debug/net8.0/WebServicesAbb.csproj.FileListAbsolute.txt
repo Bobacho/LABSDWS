@@ -89,3 +89,25 @@ C:/Users/AULAFISI/LABSDWS/LAB1/ABB/Catalogo/WebServicesAbb/bin/Debug/net8.0/Newt
 C:/Users/AULAFISI/LABSDWS/LAB1/ABB/Catalogo/WebServicesAbb/bin/Debug/net8.0/System.Web.Mvc.dll
 C:/Users/AULAFISI/LABSDWS/LAB1/ABB/Catalogo/WebServicesAbb/bin/Debug/net8.0/log4net.dll
 C:/Users/AULAFISI/LABSDWS/LAB1/ABB/Catalogo/WebServicesAbb/bin/Debug/net8.0/System.Web.WebPages.dll
+C:\Users\Alexa\OneDrive - Universidad Tecnologica del Peru\Desktop\Nueva carpeta\LABSDWS\LAB1\ABB\Catalogo\WebServicesAbb\obj\Debug\net8.0\WebServicesAbb.dll
+C:\Users\Alexa\OneDrive - Universidad Tecnologica del Peru\Desktop\Nueva carpeta\LABSDWS\LAB1\ABB\Catalogo\WebServicesAbb\obj\Debug\net8.0\refint\WebServicesAbb.dll
+C:\Users\Alexa\OneDrive - Universidad Tecnologica del Peru\Desktop\Nueva carpeta\LABSDWS\LAB1\ABB\Catalogo\WebServicesAbb\obj\Debug\net8.0\WebServicesAbb.pdb
+C:\Users\Alexa\OneDrive - Universidad Tecnologica del Peru\Desktop\Nueva carpeta\LABSDWS\LAB1\ABB\Catalogo\WebServicesAbb\obj\Debug\net8.0\WebServicesAbb.csproj.AssemblyReference.cache
+C:\Users\Alexa\OneDrive - Universidad Tecnologica del Peru\Desktop\Nueva carpeta\LABSDWS\LAB1\ABB\Catalogo\WebServicesAbb\obj\Debug\net8.0\WebServicesAbb.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alexa\OneDrive - Universidad Tecnologica del Peru\Desktop\Nueva carpeta\LABSDWS\LAB1\ABB\Catalogo\WebServicesAbb\obj\Debug\net8.0\WebServicesAbb.AssemblyInfoInputs.cache
+C:\Users\Alexa\OneDrive - Universidad Tecnologica del Peru\Desktop\Nueva carpeta\LABSDWS\LAB1\ABB\Catalogo\WebServicesAbb\obj\Debug\net8.0\WebServicesAbb.AssemblyInfo.cs
+C:\Users\Alexa\OneDrive - Universidad Tecnologica del Peru\Desktop\Nueva carpeta\LABSDWS\LAB1\ABB\Catalogo\WebServicesAbb\obj\Debug\net8.0\WebServicesAbb.csproj.CoreCompileInputs.cache
+C:\Users\Alexa\OneDrive - Universidad Tecnologica del Peru\Desktop\Nueva carpeta\LABSDWS\LAB1\ABB\Catalogo\WebServicesAbb\obj\Debug\net8.0\WebServicesAbb.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Alexa\OneDrive - Universidad Tecnologica del Peru\Desktop\Nueva carpeta\LABSDWS\LAB1\ABB\Catalogo\WebServicesAbb\obj\Debug\net8.0\WebServicesAbb.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Alexa\OneDrive - Universidad Tecnologica del Peru\Desktop\Nueva carpeta\LABSDWS\LAB1\ABB\Catalogo\WebServicesAbb\obj\Debug\net8.0\WebServicesAbb.sourcelink.json
+C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\WebServicesAbb\obj\Debug\net8.0\WebServicesAbb.csproj.AssemblyReference.cache
+C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\WebServicesAbb\obj\Debug\net8.0\WebServicesAbb.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\WebServicesAbb\obj\Debug\net8.0\WebServicesAbb.AssemblyInfoInputs.cache
+C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\WebServicesAbb\obj\Debug\net8.0\WebServicesAbb.AssemblyInfo.cs
+C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\WebServicesAbb\obj\Debug\net8.0\WebServicesAbb.csproj.CoreCompileInputs.cache
+C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\WebServicesAbb\obj\Debug\net8.0\WebServicesAbb.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\WebServicesAbb\obj\Debug\net8.0\WebServicesAbb.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\WebServicesAbb\obj\Debug\net8.0\WebServicesAbb.sourcelink.json
+C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\WebServicesAbb\obj\Debug\net8.0\WebServicesAbb.dll
+C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\WebServicesAbb\obj\Debug\net8.0\refint\WebServicesAbb.dll
+C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\WebServicesAbb\obj\Debug\net8.0\WebServicesAbb.pdb

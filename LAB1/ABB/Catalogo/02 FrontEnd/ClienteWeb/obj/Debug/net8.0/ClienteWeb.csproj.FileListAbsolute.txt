@@ -39,3 +39,6 @@
 /home/luciano/LABSDWS/LAB1/ABB/Catalogo/02 FrontEnd/ClienteWeb/obj/Debug/net8.0/ClienteWeb.pdb
 /home/luciano/LABSDWS/LAB1/ABB/Catalogo/02 FrontEnd/ClienteWeb/obj/Debug/net8.0/ClienteWeb.genruntimeconfig.cache
 /home/luciano/LABSDWS/LAB1/ABB/Catalogo/02 FrontEnd/ClienteWeb/obj/Debug/net8.0/ref/ClienteWeb.dll
+C:\Users\Alexa\OneDrive - Universidad Tecnologica del Peru\Desktop\Nueva carpeta\LABSDWS\LAB1\ABB\Catalogo\02 FrontEnd\ClienteWeb\obj\Debug\net8.0\ClienteWeb.dll
+C:\Users\Alexa\OneDrive - Universidad Tecnologica del Peru\Desktop\Nueva carpeta\LABSDWS\LAB1\ABB\Catalogo\02 FrontEnd\ClienteWeb\obj\Debug\net8.0\refint\ClienteWeb.dll
+C:\Users\Alexa\OneDrive - Universidad Tecnologica del Peru\Desktop\Nueva carpeta\LABSDWS\LAB1\ABB\Catalogo\02 FrontEnd\ClienteWeb\obj\Debug\net8.0\ClienteWeb.pdb
