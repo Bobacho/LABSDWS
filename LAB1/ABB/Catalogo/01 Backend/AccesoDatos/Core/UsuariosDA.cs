@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Entidades.Core;
 using Microsoft.IdentityModel.Protocols;
+using System.Security.Cryptography.X509Certificates;
+using System.Net;
 
 namespace AccesoDatos.Core
 {
@@ -16,52 +18,60 @@ namespace AccesoDatos.Core
         public Usuarios LlenarEntidad(IDataReader reader)
         {
             Usuarios usuario = new Usuarios();
-            reader.GetSchemaTable().DefaultView.RowFilter = "ColumnName = 'IdUsuario'";
-            if (reader.GetSchemaTable().DefaultView.Count.Equals(1) && !Convert.IsDBNull(reader["IdUsuario"]))
+            Dictionary<string, string> columnMappings = new Dictionary<string, string>
             {
-                usuario.IdUsuario = Convert.ToInt32(reader["IdUsuario"]);
-            }
-            reader.GetSchemaTable().DefaultView.RowFilter = "ColumnName = 'CodUsuario'";
-            if (reader.GetSchemaTable().DefaultView.Count.Equals(1) && !Convert.IsDBNull(reader["CodUsuario"]))
+                { "IdUsuario", nameof(usuario.IdUsuario) },
+                { "CodUsuario", nameof(usuario.CodUsuario) },
+                {  "Nombres", nameof(usuario.Nombres) },
+                { "IdRol", nameof(usuario.IdRol) },
+                { "DesRol", nameof(usuario.DesRol) }
+            };
+
+            foreach (var columnMapping in columnMappings)
             {
-                usuario.CodUsuario = Convert.ToString(reader["CodUsuario"]);
-            }
-            reader.GetSchemaTable().DefaultView.RowFilter = "ColumnName = 'Nombres'";
-            if (reader.GetSchemaTable().DefaultView.Count.Equals(1) && !Convert.IsDBNull(reader["Nombres"]))
-            {
-                usuario.Nombres = Convert.ToString(reader["Nombres"]);
-            }
-            reader.GetSchemaTable().DefaultView.RowFilter = "ColumnName = 'IdRol'";
-            if (reader.GetSchemaTable().DefaultView.Count.Equals(1) && !Convert.IsDBNull(reader["IdRol"]))
-            {
-                usuario.IdRol = Convert.ToInt32(reader["IdRol"]);
-            }
-            reader.GetSchemaTable().DefaultView.RowFilter = "ColumnName = 'DesRol'";
-            if (reader.GetSchemaTable().DefaultView.Count.Equals(1) && !Convert.IsDBNull(reader["DesRol"]))
-            {
-                usuario.DesRol = Convert.ToString(reader["DesRol"]);
-            }
-            return usuario;
-        }
-        public List<Usuarios> ListarUsuarios()
-        {
-            List <Usuarios> ListaEntidad = new List<Usuarios> ();
-            Usuarios entidad = null;
-    
-            using (SqlConnection conexion = new SqlConnection(ConfigurationManager.ConnectionStrings[ConfigurationManager.AppSettings["cnnSql"]].ConnectionString))
-            {
-                using (SqlCommand comando = new SqlCommand(" ListarUsuarios ",conexion))
+                reader.GetSchemaTable().DefaultView.RowFilter = $"ColumnName = '{columnMapping.Key}'";
+
+                if (reader.GetSchemaTable().DefaultView.Count == 1 && !Convert.IsDBNull(reader[columnMapping.Key]))
                 {
-                    comando.CommandType = CommandType.StoredProcedure;
-                    conexion.Open();
-                    SqlDataReader reader = comando.ExecuteReader();
-                    while (reader.Read())
+                    var propertyInfo = typeof(Usuarios).GetProperty(columnMapping.Value);
+                    if (propertyInfo != null)
                     {
-                        entidad = LlenarEntidad(reader);
-                        ListaEntidad.Add(entidad);
+                        propertyInfo.SetValue(usuario, Convert.ChangeType(reader[columnMapping.Key], propertyInfo.PropertyType));
                     }
                 }
+            }
+
+            return usuario;
+        }
+
+        public List<Usuarios> ListarUsuarios()
+        {
+            List<Usuarios> ListaEntidad = new List<Usuarios>();
+            Usuarios entidad = null;
+            Console.WriteLine("Inicio");
+            try {
+                SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder()
+                {
+                    DataSource = "localhost\\SQLEXPRESS",
+                    TrustServerCertificate = true,
+                    UserID = "sa",
+                    Password = "123",
+                    InitialCatalog = "DBCatalogo"
+                };
+                SqlConnection conexion = new SqlConnection(builder.ConnectionString);
+                SqlCommand comando = new SqlCommand("EXEC ListarUsuarios", conexion);
+                conexion.Open();
+                SqlDataReader reader = comando.ExecuteReader();
+                while (reader.Read())
+                {
+                    entidad = LlenarEntidad(reader);
+                    ListaEntidad.Add(entidad);
+                    Console.WriteLine(entidad);
+                }
                 conexion.Close();
+            }
+            catch(Exception ex) {
+                Console.WriteLine(ex);
             }
             return ListaEntidad;
         }

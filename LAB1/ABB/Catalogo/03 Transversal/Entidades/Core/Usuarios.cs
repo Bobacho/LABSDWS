@@ -14,6 +14,6 @@ namespace Entidades.Core
         public byte[] Clave { get; set; }
         public string Nombres { get; set; }
         public int IdRol { get; set; }
-        public string DesRol { get; set;} 
+        public string DesRol { get; set; }
     }
 }

@@ -2,31 +2,37 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
-using System.Net.Http;
-using System.Web.Http;
 using LogicaNegocio.Core;
 using Entidades.Core;
+using Microsoft.AspNetCore.Mvc;
 
 namespace ABB.Catalogo.WebServicesABB.Controllers
 {
-    public class UsuarioController: ApiController{
-        public IEnumerable<string> Get(){
+    [ApiController]
+    [Route("/Api/Usuario")]
+    public class UsuarioController{
+        [HttpGet]
+        public IEnumerable<Usuarios> Get(){
             List<Usuarios> usuarios = new List<Usuarios>();
             usuarios = new UsuariosLN().ListarUsuarios();
             return usuarios;
         }
-        public string Get(int id)
+        [HttpGet("{id}")]
+        public string GetById(int id)
         {
             return "value";
         }
+        [HttpPost]
         public void Post([FromBody]string value)
         {
             
-        } 
+        }
+        [HttpPut]
         public void Put(int id,[FromBody] string value)
         {
 
         }
+        [HttpDelete]
         public void Delete(int id)
         {
             
