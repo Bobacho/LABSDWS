@@ -5,6 +5,7 @@ using System.Net;
 using LogicaNegocio.Core;
 using Entidades.Core;
 using Microsoft.AspNetCore.Mvc;
+using System.Xml.Serialization;
 
 namespace ABB.Catalogo.WebServicesABB.Controllers
 {
@@ -12,6 +13,7 @@ namespace ABB.Catalogo.WebServicesABB.Controllers
     [Route("/Api/Usuario")]
     public class UsuarioController{
         [HttpGet]
+        [Produces("application/xml")]
         public IEnumerable<Usuarios> Get(){
             List<Usuarios> usuarios = new List<Usuarios>();
             usuarios = new UsuariosLN().ListarUsuarios();

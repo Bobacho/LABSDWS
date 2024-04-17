@@ -1,5 +1,3 @@
-CREATE DATABASE [DBCatalogo];
-GO
 USE [DBCatalogo];
 GO
 /****** Object:  Table [dbo].[Categoria]    Script Date: 03/06/2020 10:02:42 ******/

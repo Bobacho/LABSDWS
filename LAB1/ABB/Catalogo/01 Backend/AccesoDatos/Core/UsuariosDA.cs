@@ -22,6 +22,7 @@ namespace AccesoDatos.Core
             {
                 { "IdUsuario", nameof(usuario.IdUsuario) },
                 { "CodUsuario", nameof(usuario.CodUsuario) },
+                { "ClaveTxt" , nameof(usuario.ClaveTxt)},
                 {  "Nombres", nameof(usuario.Nombres) },
                 { "IdRol", nameof(usuario.IdRol) },
                 { "DesRol", nameof(usuario.DesRol) }
@@ -52,10 +53,10 @@ namespace AccesoDatos.Core
             try {
                 SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder()
                 {
-                    DataSource = "localhost\\SQLEXPRESS",
+                    DataSource = "34.172.53.168",
                     TrustServerCertificate = true,
-                    UserID = "sa",
-                    Password = "123",
+                    UserID = "sqlserver",
+                    Password = "(n?V(R1f<;#XqlCh",
                     InitialCatalog = "DBCatalogo"
                 };
                 SqlConnection conexion = new SqlConnection(builder.ConnectionString);

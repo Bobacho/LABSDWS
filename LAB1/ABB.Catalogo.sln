@@ -23,7 +23,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utiles", "ABB\Catalogo\03 T
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UtilesWeb", "ABB\Catalogo\03 Transversal\UtilesWeb\UtilesWeb.csproj", "{2603B8A5-A4A8-4ED7-9C62-B26264FA9C0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClienteWeb", "ABB\Catalogo\02 FrontEnd\ClienteWeb\ClienteWeb.csproj", "{2FF8CC65-7E33-4586-A1CB-54C7A39BAFDD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClienteWeb", "ABB\Catalogo\02 FrontEnd\ClienteWeb\ClienteWeb.csproj", "{2FF8CC65-7E33-4586-A1CB-54C7A39BAFDD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{29C96AB3-DAFF-4BA6-9086-142FBDB6090D}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+		Dockerfile = Dockerfile
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
