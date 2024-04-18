@@ -8,19 +8,23 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Alexa\\.nuget\\packages\\": {}
+    "C:\\Users\\AULAFISI\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\02 FrontEnd\\ClienteWeb\\ClienteWeb.csproj",
+      "projectUniqueName": "C:\\Users\\AULAFISI\\LABSDWS\\LAB1\\ABB\\Catalogo\\02 FrontEnd\\ClienteWeb\\ClienteWeb.csproj",
       "projectName": "ClienteWeb",
-      "projectPath": "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\02 FrontEnd\\ClienteWeb\\ClienteWeb.csproj",
-      "packagesPath": "C:\\Users\\Alexa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\02 FrontEnd\\ClienteWeb\\obj\\",
+      "projectPath": "C:\\Users\\AULAFISI\\LABSDWS\\LAB1\\ABB\\Catalogo\\02 FrontEnd\\ClienteWeb\\ClienteWeb.csproj",
+      "packagesPath": "C:\\Users\\AULAFISI\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\AULAFISI\\LABSDWS\\LAB1\\ABB\\Catalogo\\02 FrontEnd\\ClienteWeb\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Alexa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\AULAFISI\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -69,7 +73,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
