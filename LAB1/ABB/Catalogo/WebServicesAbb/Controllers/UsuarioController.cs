@@ -6,6 +6,7 @@ using LogicaNegocio.Core;
 using Entidades.Core;
 using Microsoft.AspNetCore.Mvc;
 using System.Xml.Serialization;
+using ABB.Catalogo.LogicaNegocio.Core;
 
 namespace ABB.Catalogo.WebServicesABB.Controllers
 {
@@ -23,6 +24,19 @@ namespace ABB.Catalogo.WebServicesABB.Controllers
         public string GetById(int id)
         {
             return "value";
+        }
+        [HttpGet("{pUsuario}/{pPassword}")]
+        public int GetByUsuarioAndPassword(string pUsuario,string pPassword)
+        {
+            try{
+                UsuariosLN usuario = new UsuariosLN();
+                return usuario.GetUsuarioId(pUsuario,pPassword);
+            }
+            catch(Exception ex){
+                string innerException = ex.InnerException == null ? "" : ex.InnerException.ToString();
+                Console.WriteLine(innerException);
+                return -1; 
+            }
         }
         [HttpPost]
         public void Post([FromBody]string value)
