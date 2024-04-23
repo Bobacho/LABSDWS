@@ -378,7 +378,8 @@
         "dependencies": {
           "Entidades": "1.0.0",
           "Microsoft.Data.SqlClient": "5.2.0",
-          "System.Configuration.ConfigurationManager": "8.0.0"
+          "System.Configuration.ConfigurationManager": "8.0.0",
+          "Utiles": "1.0.0"
         },
         "runtime": {
           "AccesoDatos.dll": {}

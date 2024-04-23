@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
-using LogicaNegocio.Core;
 using Entidades.Core;
 using Microsoft.AspNetCore.Mvc;
 using System.Xml.Serialization;
 using ABB.Catalogo.LogicaNegocio.Core;
+using System.Text.Json;
 
 namespace ABB.Catalogo.WebServicesABB.Controllers
 {
@@ -14,7 +14,6 @@ namespace ABB.Catalogo.WebServicesABB.Controllers
     [Route("/Api/Usuario")]
     public class UsuarioController{
         [HttpGet]
-        [Produces("application/xml")]
         public IEnumerable<Usuarios> Get(){
             List<Usuarios> usuarios = new List<Usuarios>();
             usuarios = new UsuariosLN().ListarUsuarios();
@@ -25,33 +24,72 @@ namespace ABB.Catalogo.WebServicesABB.Controllers
         {
             return "value";
         }
-        [HttpGet("{pUsuario}/{pPassword}")]
-        public int GetByUsuarioAndPassword(string pUsuario,string pPassword)
+        [HttpGet("/getuserid")]
+        public int GetByUsuarioAndPassword([FromQuery]string pUsuario, [FromQuery] string pPassword)
         {
             try{
                 UsuariosLN usuario = new UsuariosLN();
                 return usuario.GetUsuarioId(pUsuario,pPassword);
             }
             catch(Exception ex){
-                string innerException = ex.InnerException == null ? "" : ex.InnerException.ToString();
-                Console.WriteLine(innerException);
+                string innerException =ex.InnerException==null ? "":ex.InnerException.ToString();
+                Console.WriteLine("Error en Controller:"+innerException);
                 return -1; 
             }
         }
         [HttpPost]
-        public void Post([FromBody]string value)
+        public void Post([FromBody]Dictionary<string,object> usuariosParcial)
         {
-            
-        }
-        [HttpPut]
-        public void Put(int id,[FromBody] string value)
-        {
+            try
+            {
 
+                Usuarios usuarios = new Usuarios() {
+                    Nombres = ((JsonElement)usuariosParcial["nombres"]).GetString(),
+                    ClaveTxt = ((JsonElement)usuariosParcial["clave"]).GetString(),
+                    IdRol = ((JsonElement)usuariosParcial["idRol"]).GetInt32(),
+                    CodUsuario = ((JsonElement)usuariosParcial["codUsuario"]).GetString()
+                };
+                new UsuariosLN().InsertarUsuario(usuarios);
+            }
+            catch (Exception ex)
+            {
+                string innerException = ex.InnerException == null ? "" : ex.InnerException.ToString();
+                Console.WriteLine("Controller:" + innerException);
+            }
         }
-        [HttpDelete]
+        [HttpPut("{id}")]
+        public void Put(int id,[FromBody]Dictionary<string, object> usuariosParcial)
+        {
+            try
+            {
+                Usuarios usuarios = new Usuarios()
+                {
+                    Nombres = ((JsonElement)usuariosParcial["nombres"]).GetString(),
+                    ClaveTxt = ((JsonElement)usuariosParcial["clave"]).GetString(),
+                    IdRol = ((JsonElement)usuariosParcial["idRol"]).GetInt32(),
+                    CodUsuario = ((JsonElement)usuariosParcial["codUsuario"]).GetString()
+                };
+
+                new UsuariosLN().ModificarUsuario(id,usuarios);
+            }
+            catch (Exception ex)
+            {
+                string innerException = ex.InnerException == null ? "" : ex.InnerException.ToString();
+                Console.WriteLine(innerException);
+            }
+        }
+        [HttpDelete("{id}")]
         public void Delete(int id)
         {
-            
+            try
+            {
+                new UsuariosLN().BorrarUsuario(id);
+            }
+            catch(Exception ex)
+            {
+                string innerException = ex.InnerException == null ? "" : ex.InnerException.ToString();
+                Console.WriteLine(innerException);
+            }
         }
     }
 }

@@ -10,7 +10,8 @@
         "dependencies": {
           "Entidades": "1.0.0",
           "Microsoft.Data.SqlClient": "5.2.0",
-          "System.Configuration.ConfigurationManager": "8.0.0"
+          "System.Configuration.ConfigurationManager": "8.0.0",
+          "Utiles": "1.0.0"
         },
         "runtime": {
           "AccesoDatos.dll": {}
@@ -378,6 +379,14 @@
         "runtime": {
           "Entidades.dll": {}
         }
+      },
+      "Utiles/1.0.0": {
+        "dependencies": {
+          "Entidades": "1.0.0"
+        },
+        "runtime": {
+          "Utiles.dll": {}
+        }
       }
     }
   },
@@ -640,6 +649,11 @@
       "hashPath": "system.threading.tasks.extensions.4.5.4.nupkg.sha512"
     },
     "Entidades/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Utiles/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

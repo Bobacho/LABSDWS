@@ -62,3 +62,5 @@ C:\Users\AULAFISI\LABSDWS\LAB1\ABB\Catalogo\01 Backend\AccesoDatos\obj\Debug\net
 C:\Users\AULAFISI\LABSDWS\LAB1\ABB\Catalogo\01 Backend\AccesoDatos\obj\Debug\net8.0\AccesoDa.B2719C34.Up2Date
 C:\Users\AULAFISI\LABSDWS\LAB1\ABB\Catalogo\01 Backend\AccesoDatos\obj\Debug\net8.0\refint\AccesoDatos.dll
 C:\Users\AULAFISI\LABSDWS\LAB1\ABB\Catalogo\01 Backend\AccesoDatos\obj\Debug\net8.0\ref\AccesoDatos.dll
+C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\01 Backend\AccesoDatos\bin\Debug\net8.0\Utiles.dll
+C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\01 Backend\AccesoDatos\bin\Debug\net8.0\Utiles.pdb

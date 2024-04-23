@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Entidades.Core;
-using Utiles.Helpers;
+using ABB.Catalogo.Utiles.Helpers;
 using Microsoft.IdentityModel.Protocols;
 using System.Security.Cryptography.X509Certificates;
 using System.Net;
@@ -16,6 +16,18 @@ namespace AccesoDatos.Core
 {
     public class UsuariosDA
     {
+        private SqlConnectionStringBuilder builder;
+        public UsuariosDA()
+        {
+            builder = new SqlConnectionStringBuilder()
+            {
+                DataSource = "34.172.53.168",
+                TrustServerCertificate = true,
+                UserID = "sqlserver",
+                Password = "(n?V(R1f<;#XqlCh",
+                InitialCatalog = "DBCatalogo"
+            };
+        }
         public Usuarios LlenarEntidad(IDataReader reader)
         {
             Usuarios usuario = new Usuarios();
@@ -51,15 +63,8 @@ namespace AccesoDatos.Core
             List<Usuarios> ListaEntidad = new List<Usuarios>();
             Usuarios entidad = null;
             Console.WriteLine("Inicio");
-            try {
-                SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder()
-                {
-                    DataSource = "34.172.53.168",
-                    TrustServerCertificate = true,
-                    UserID = "sqlserver",
-                    Password = "(n?V(R1f<;#XqlCh",
-                    InitialCatalog = "DBCatalogo"
-                };
+            try
+            {
                 SqlConnection conexion = new SqlConnection(builder.ConnectionString);
                 SqlCommand comando = new SqlCommand("EXEC ListarUsuarios", conexion);
                 conexion.Open();
@@ -72,38 +77,129 @@ namespace AccesoDatos.Core
                 }
                 conexion.Close();
             }
-            catch(Exception ex) {
+            catch (Exception ex)
+            {
                 Console.WriteLine(ex);
             }
             return ListaEntidad;
         }
-        public int GetUsuarioId(string pUsuario,string pPassword)
+        public int GetUsuarioId(string pUsuario, string pPassword)
         {
-            try{
-                byte [] UserPass = EncriptacionHelper.EncriptarByte(pPassword);
+            try
+            {
+                byte[] UserPass = EncriptacionHelper.EncriptarByte(pPassword);
+                Console.WriteLine(UserPass.ToString());
                 int returnedVal = 0;
-                SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder()
-                {
-                    DataSource = "34.172.53.168",
-                    TrustServerCertificate = true,
-                    UserID = "sqlserver",
-                    Password = "(n?V(R1f<;#XqlCh",
-                    InitialCatalog = "DBCatalogo"
-                };
                 SqlConnection connection = new SqlConnection(builder.ConnectionString);
-                SqlCommand command = new SqlCommand("paUsuario_BuscarCodUserClave",connection);
+                SqlCommand command = new SqlCommand("paUsuario_BuscaCodUserClave", connection);
                 command.CommandType = CommandType.StoredProcedure;
-                command.Parameters.AddWithValue("@ParamUsuario",pUsuario);
-                command.Parameters.AddWithValue("@ParamPass",UserPass);
+                command.Parameters.AddWithValue("@ParamUsuario", pUsuario);
+                command.Parameters.AddWithValue("@ParamPass", UserPass);
                 connection.Open();
                 returnedVal = Convert.ToInt32(command.ExecuteScalar());
                 connection.Close();
+                Console.WriteLine(returnedVal);
                 return Convert.ToInt32(returnedVal);
-            }catch (Exception ex)
+            }
+            catch (Exception ex)
+            {
+                string innerException = ex.InnerException == null ? "" : ex.InnerException.ToString();
+                Console.WriteLine("Error en DA:" + innerException);
+                return -1;
+            }
+        }
+
+        public Usuarios InsertarUsuario(Usuarios usuarios)
+        {
+            try
+            {
+                byte[] UserPass = EncriptacionHelper.EncriptarByte(usuarios.ClaveTxt);
+                usuarios.Clave = UserPass;
+                SqlConnection connection = new SqlConnection(builder.ConnectionString);
+                SqlCommand command = new SqlCommand("paUsuario_Insertar", connection);
+                command.CommandType = CommandType.StoredProcedure;
+                Dictionary<string, object> parameters = new Dictionary<string, object>
+                {
+                    { "@Clave",usuarios.Clave},
+                    { "'@CodUsuario",usuarios.CodUsuario},
+                    { "@Nombres" ,usuarios.Nombres},
+                    { "@IdRol" , usuarios.IdRol}
+                };
+                foreach (var item in parameters)
+                {
+                    command.Parameters.AddWithValue(item.Key, item.Value);
+                }
+                connection.Open();
+                command.ExecuteNonQuery();
+                connection.Close();
+                return usuarios;
+            }
+            catch (Exception e)
+            {
+                string innerExcetion = e.InnerException == null ? "" : e.InnerException.ToString();
+                Console.WriteLine("Error en DA:"+innerExcetion);
+                return new Usuarios();
+            }
+        }
+
+        public Usuarios ModificarUsuario(int id, Usuarios usuarios)
+        {
+            try
+            {
+                try
+                {
+                    byte[] UserPass = EncriptacionHelper.EncriptarByte(usuarios.ClaveTxt);
+                    usuarios.Clave = UserPass;
+                    SqlConnection connection = new SqlConnection(builder.ConnectionString);
+                    SqlCommand command = new SqlCommand("paUsuario_Modificar", connection);
+                    command.CommandType = CommandType.StoredProcedure;
+                    Dictionary<string, object> parameters = new Dictionary<string, object>
+                {
+                    { "@IdUsuario" , id},
+                    { "@Clave",usuarios.Clave},
+                    { "@CodUsuario",usuarios.CodUsuario},
+                    { "@Nombres" ,usuarios.Nombres},
+                    { "@IdRol" , usuarios.IdRol}
+                };
+                    foreach (var item in parameters)
+                    {
+                        command.Parameters.AddWithValue(item.Key, item.Value);
+                    }
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                    connection.Close();
+                    return usuarios;
+                }
+                catch (Exception e)
+                {
+                    string innerExcetion = e.InnerException == null ? "" : e.InnerException.ToString();
+                    Console.WriteLine(innerExcetion);
+                    return new Usuarios();
+                }
+            }
+            catch (Exception ex)
             {
                 string innerException = ex.InnerException == null ? "" : ex.InnerException.ToString();
                 Console.WriteLine(innerException);
-                return -1;
+                return new Usuarios();
+            }
+        }
+        public void BorrarUsuario(int id)
+        {
+            try
+            {
+                SqlConnection connection = new SqlConnection(builder.ConnectionString);
+                SqlCommand command = new SqlCommand("DELETE FROM USUARIO WHERE IdUsuario = @IdUsuario;", connection);
+                command.CommandType = CommandType.Text;
+                command.Parameters.AddWithValue("@IdUsuario",id);
+                connection.Open();
+                command.ExecuteNonQuery();
+                connection.Close();
+            }
+            catch(Exception ex)
+            {
+                string innerException = ex.InnerException == null ? "" : ex.InnerException.ToString();
+                Console.WriteLine(innerException);
             }
         }
     }

@@ -1,0 +1,106 @@
+﻿@using Entidades.Core
+@model List<Usuarios>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Usuarios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #ddd;
+            background-color: #fff;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        p {
+            margin-top: 20px;
+        }
+
+        .action-link {
+            color: blue;
+            text-decoration: none;
+        }
+
+            .action-link:hover {
+                text-decoration: underline;
+            }
+    </style>
+</head>
+<body>
+    <h1>Lista de Usuarios</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombres</th>
+                <th>CodUsuario</th>
+                <th>ClaveTxt</th>
+                <th>IdRol</th>
+                <th>DesRol</th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var usuario in Model)
+            {
+                <tr>
+                    <td>@usuario.Nombres</td>
+                    <td>@usuario.CodUsuario</td>
+                    <td>@usuario.ClaveTxt</td>
+                    <td>@usuario.IdRol</td>
+                    <td>@usuario.DesRol</td>
+                    <td>
+                        <p>
+                            <a href="@Url.Action("Edit")" class="action-link">Edit</a>
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <a href="@Url.Action("Detail")" class="action-link">Detail</a>
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <a href="@Url.Action("Delete")" class="action-link">Delete</a>
+                        </p>
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <p>
+        <a href="@Url.Action("Create")" class="action-link">Crear Nuevo</a>
+    </p>
+</body>
+</html>
+s

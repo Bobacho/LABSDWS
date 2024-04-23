@@ -1,4 +1,4 @@
-using ABB.Catalogo.Entidades.Core;
+using Entidades.Core;
 using AccesoDatos.Core;
 
 namespace ABB.Catalogo.LogicaNegocio.Core{
@@ -7,7 +7,7 @@ namespace ABB.Catalogo.LogicaNegocio.Core{
         {
             List<Usuarios> lista = new List<Usuarios> ();
             try{
-                UsuariosDA usuarios = new UsuariosDa();
+                UsuariosDA usuarios = new UsuariosDA();
                 return usuarios.ListarUsuarios();
             }
             catch(Exception ex)
@@ -25,8 +25,50 @@ namespace ABB.Catalogo.LogicaNegocio.Core{
             }
             catch (Exception ex)
             {
-                string innerException = (ex.InnerException == null) ? "" : ex.InnerException.ToString(); 
+                string innerException = ex.InnerException==null ? "":ex.InnerException.ToString();
+                Console.WriteLine("Error en LN:"+innerException);
                 return -1;
+            }
+        }
+
+        public Usuarios InsertarUsuario(Usuarios usuarios)
+        {
+            try
+            {
+                return new UsuariosDA().InsertarUsuario(usuarios);
+            }
+            catch(Exception ex)
+            {
+                string innerException = ex.InnerException == null ? "" : ex.InnerException.ToString();
+                Console.WriteLine(innerException);
+                return new Usuarios();
+            }
+        }
+
+        public Usuarios ModificarUsuario(int id,Usuarios usuarios)
+        {
+            try
+            {
+                return new UsuariosDA().ModificarUsuario(id,usuarios);
+            }
+            catch (Exception ex)
+            {
+                string innerException = ex.InnerException == null ? "" : ex.InnerException.ToString() ;
+                Console.WriteLine("Error en LN:"+innerException);
+                return new Usuarios(); 
+            }
+        }
+
+        public void BorrarUsuario(int id)
+        {
+            try
+            {
+                new UsuariosDA().BorrarUsuario(id);
+            }
+            catch(Exception ex)
+            {
+                string innerException = ex.InnerException == null ? "" : ex.InnerException.ToString();
+                Console.WriteLine(innerException);
             }
         }
     }
