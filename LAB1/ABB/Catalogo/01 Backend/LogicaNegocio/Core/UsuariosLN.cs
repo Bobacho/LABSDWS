@@ -31,6 +31,19 @@ namespace ABB.Catalogo.LogicaNegocio.Core{
             }
         }
 
+        public Usuarios GetUsuariosById(int id)
+        {
+            try
+            {
+                UsuariosDA usuariosDA = new UsuariosDA();
+                return usuariosDA.GetUsuarioById(id);
+            }catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+                return null;
+            }
+        }
+
         public Usuarios InsertarUsuario(Usuarios usuarios)
         {
             try

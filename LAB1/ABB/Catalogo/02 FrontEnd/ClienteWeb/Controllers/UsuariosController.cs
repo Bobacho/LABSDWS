@@ -1,9 +1,11 @@
 ﻿using Entidades.Core;
+using LogicaNegocio.Core;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Net;
+using System.Net.Mime;
 using System.Text;
 
 namespace ClienteWeb.Controllers
@@ -42,17 +44,40 @@ namespace ClienteWeb.Controllers
         // GET: UsuariosControllers/Create
         public ActionResult Create()
         {
-            return View();
+            Usuarios usuario = new Usuarios();
+            List<Rol> listaRol = new List<Rol>();
+            listaRol = new RolLN().ListaRol();
+            listaRol.Add(new Rol() { IdRol = 0, DesRol = "[Seleccione Rol ...]"});
+            ViewBag.listaRoles = listaRol;
+            return View(usuario);
         }
 
         // POST: UsuariosControllers/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(Usuarios collection)
         {
             try
             {
-                return RedirectToAction(nameof(Index));
+                string controladora = "Usuario";
+                using (WebClient usuario= new WebClient())
+                {
+                    usuario.Headers.Clear();
+                    usuario.Headers[HttpRequestHeader.ContentType] = jsonMediaType;
+                    usuario.Encoding = UTF8Encoding.UTF8;
+                    Dictionary<string, object> usuariosDict = new Dictionary<string, object>() 
+                    {
+                        {"nombres",collection.Nombres },
+                        {"idRol",collection.IdRol},
+                        {"clave",collection.ClaveTxt },
+                        {"codUsuario",collection.CodUsuario}
+                    };
+                    var usuarioJson = JsonConvert.SerializeObject(usuariosDict);
+                    string rutacompleta = RutaApi + controladora;
+                    var resultado = usuario.UploadString(new Uri(rutacompleta), usuarioJson);
+                    Console.WriteLine(resultado);
+                }
+                    return RedirectToAction(nameof(Index));
             }
             catch
             {
@@ -63,16 +88,53 @@ namespace ClienteWeb.Controllers
         // GET: UsuariosControllers/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            string controladora = "Usuario";
+            Usuarios users = new Usuarios();
+            using (WebClient usuario = new WebClient())
+            {
+                usuario.Headers.Clear();//borra datos anteriores
+                //establece el tipo de dato de tranferencia
+                usuario.Headers[HttpRequestHeader.ContentType] = jsonMediaType;
+                //typo de decodificador reconocimiento carecteres especiales
+                usuario.Encoding = UTF8Encoding.UTF8;
+                string rutacompleta = RutaApi + controladora + "/" + id;
+                //ejecuta la busqueda en la web api usando metodo GET
+                var data = usuario.DownloadString(new Uri(rutacompleta));
+
+                // convierte los datos traidos por la api a tipo lista de usuarios
+                users = JsonConvert.DeserializeObject<Usuarios>(data);
+            }
+            List<Rol> listaRol = new List<Rol>();
+            listaRol = new RolLN().ListaRol();
+            listaRol.Add(new Rol() { IdRol = 0, DesRol = "[Seleccione Rol ...]" });
+            ViewBag.listaRoles = listaRol;
+            return View(users);
         }
 
         // POST: UsuariosControllers/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(int id, Usuarios collection)
         {
             try
             {
+                using (WebClient usuario = new WebClient())
+                {
+                    usuario.Headers.Clear();
+                    usuario.Headers[HttpRequestHeader.ContentType] = jsonMediaType;
+                    usuario.Encoding = UTF8Encoding.UTF8;
+                    string controladora = "Usuario";
+                    string rutaCompleta = RutaApi+controladora+"/"+id;
+                    Dictionary<string, object> usuarioDict = new Dictionary<string, object>()
+                    {
+                        { "nombres", collection.Nombres},
+                        { "idRol",collection.IdRol},
+                        { "codUsuario",collection.CodUsuario},
+                        { "clave",collection.ClaveTxt}
+                    };
+                    var usuarioJson=JsonConvert.SerializeObject(usuarioDict);
+                    var resultado=usuario.UploadString(rutaCompleta,"PUT",usuarioJson);
+                }
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -84,7 +146,23 @@ namespace ClienteWeb.Controllers
         // GET: UsuariosControllers/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            string controladora = "Usuario";
+            Usuarios users = new Usuarios();
+            using (WebClient usuario = new WebClient())
+            {
+                usuario.Headers.Clear();//borra datos anteriores
+                //establece el tipo de dato de tranferencia
+                usuario.Headers[HttpRequestHeader.ContentType] = jsonMediaType;
+                //typo de decodificador reconocimiento carecteres especiales
+                usuario.Encoding = UTF8Encoding.UTF8;
+                string rutacompleta = RutaApi + controladora + "/" + id;
+                //ejecuta la busqueda en la web api usando metodo GET
+                var data = usuario.DownloadString(new Uri(rutacompleta));
+
+                // convierte los datos traidos por la api a tipo lista de usuarios
+                users = JsonConvert.DeserializeObject<Usuarios>(data);
+            }
+            return View(users);
         }
 
         // POST: UsuariosControllers/Delete/5
@@ -94,6 +172,15 @@ namespace ClienteWeb.Controllers
         {
             try
             {
+                using (WebClient usuario = new WebClient())
+                {
+                    usuario.Headers.Clear();
+                    usuario.Headers[HttpResponseHeader.ContentType] = jsonMediaType;
+                    usuario.Encoding = Encoding.UTF8;
+                    string controladora = "Usuario";
+                    string rutaCompleta = RutaApi + controladora + "/" + id;
+                    var resultado = usuario.UploadString(rutaCompleta, "DELETE", "");
+                }
                 return RedirectToAction(nameof(Index));
             }
             catch

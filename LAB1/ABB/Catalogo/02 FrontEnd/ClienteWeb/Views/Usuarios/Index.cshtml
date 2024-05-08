@@ -79,7 +79,7 @@
                     <td>@usuario.DesRol</td>
                     <td>
                         <p>
-                            <a href="@Url.Action("Edit")" class="action-link">Edit</a>
+                            @Html.ActionLink("Edit","Edit","Usuarios",new {id = @usuario.IdUsuario})
                         </p>
                     </td>
                     <td>
@@ -89,7 +89,7 @@
                     </td>
                     <td>
                         <p>
-                            <a href="@Url.Action("Delete")" class="action-link">Delete</a>
+                            @Html.ActionLink("Delete", "Delete", "Usuarios", new { id = @usuario.IdUsuario })
                         </p>
                     </td>
 
@@ -97,10 +97,8 @@
             }
         </tbody>
     </table>
-
     <p>
-        <a href="@Url.Action("Create")" class="action-link">Crear Nuevo</a>
+        @Html.ActionLink("Create New", "Create")
     </p>
 </body>
 </html>
-s

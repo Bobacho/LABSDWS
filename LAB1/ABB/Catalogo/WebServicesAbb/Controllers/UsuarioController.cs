@@ -20,9 +20,9 @@ namespace ABB.Catalogo.WebServicesABB.Controllers
             return usuarios;
         }
         [HttpGet("{id}")]
-        public string GetById(int id)
+        public Usuarios GetById(int id)
         {
-            return "value";
+            return new UsuariosLN().GetUsuariosById(id);
         }
         [HttpGet("/getuserid")]
         public int GetByUsuarioAndPassword([FromQuery]string pUsuario, [FromQuery] string pPassword)

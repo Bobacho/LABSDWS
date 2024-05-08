@@ -83,6 +83,22 @@ namespace AccesoDatos.Core
             }
             return ListaEntidad;
         }
+        public Usuarios GetUsuarioById(int id)
+        {
+            Usuarios entidad = null;
+            SqlConnection connection = new SqlConnection(builder.ConnectionString);
+            SqlCommand command = new SqlCommand("paUsuario_BuscaUserId", connection);
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.AddWithValue("@ParamUsuario",id);
+            connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                entidad = LlenarEntidad(reader);
+            }
+            connection.Close();
+            return entidad;
+        }
         public int GetUsuarioId(string pUsuario, string pPassword)
         {
             try
@@ -121,7 +137,7 @@ namespace AccesoDatos.Core
                 Dictionary<string, object> parameters = new Dictionary<string, object>
                 {
                     { "@Clave",usuarios.Clave},
-                    { "'@CodUsuario",usuarios.CodUsuario},
+                    { "@CodUsuario",usuarios.CodUsuario},
                     { "@Nombres" ,usuarios.Nombres},
                     { "@IdRol" , usuarios.IdRol}
                 };
