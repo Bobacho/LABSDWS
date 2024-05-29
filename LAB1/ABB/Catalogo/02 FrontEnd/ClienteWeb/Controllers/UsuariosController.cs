@@ -12,19 +12,48 @@ namespace ClienteWeb.Controllers
 {
     public class UsuariosController : Controller
     {
-        string RutaApi = "http://localhost:5202/Api/";
+        string RutaApi = "http://localhost:5000/Api/";
         string jsonMediaType = "application/json";
+
+        public string GetToken()
+        {
+            string controladora= "Auth";
+            string metodo = "Post";
+            string token = "";
+            using (WebClient request = new WebClient())
+            {
+                request.Headers.Clear();
+                request.Headers[HttpRequestHeader.ContentType] = jsonMediaType;
+                Dictionary<string,object> usuario = new Dictionary<string,object>()
+                {
+                    {"Codigo",1},
+                    {"UserName","jayqipa"},
+                    {"Clave","xyz1234"},
+                    {"Nombre","sample string 4"},
+                    {"Rol","sample string 5"}
+                };
+                request.Encoding = UTF8Encoding.UTF8;
+                var usuarioJson = JsonConvert.SerializeObject(usuario);
+                string rutaCompleta = RutaApi+controladora;
+                var tokenJson = request.UploadString(new Uri(rutaCompleta),usuarioJson);
+                token = JsonConvert.DeserializeObject<Dictionary<string,object>>(tokenJson)["token"].ToString();
+            }
+            return token;
+        }
+
         public ActionResult Index()
         {
             string controladora ="Usuario";
             string metodo ="Get";
             List<Usuarios>listausuarios = new List<Usuarios>();
+            string token = GetToken();
             using (WebClient usuario = new WebClient())
             {
                 usuario.Headers.Clear();//borra datos anteriores
                                         //establece el tipo de dato de tranferencia
                 usuario.Headers[HttpRequestHeader.ContentType] = jsonMediaType;
                 //typo de decodificador reconocimiento carecteres especiales
+                usuario.Headers[HttpRequestHeader.Authorization] = "Bearer "+token;
                 usuario.Encoding = UTF8Encoding.UTF8;
                 string rutacompleta = RutaApi + controladora;
                 //ejecuta la busqueda en la web api usando metodo GET
@@ -59,12 +88,14 @@ namespace ClienteWeb.Controllers
         {
             try
             {
+                string token = GetToken();
                 string controladora = "Usuario";
                 using (WebClient usuario= new WebClient())
                 {
                     usuario.Headers.Clear();
                     usuario.Headers[HttpRequestHeader.ContentType] = jsonMediaType;
                     usuario.Encoding = UTF8Encoding.UTF8;
+                    usuario.Headers[HttpRequestHeader.Authorization] = "Bearer "+token;
                     Dictionary<string, object> usuariosDict = new Dictionary<string, object>() 
                     {
                         {"nombres",collection.Nombres },
@@ -88,6 +119,7 @@ namespace ClienteWeb.Controllers
         // GET: UsuariosControllers/Edit/5
         public ActionResult Edit(int id)
         {
+            string token = GetToken();
             string controladora = "Usuario";
             Usuarios users = new Usuarios();
             using (WebClient usuario = new WebClient())
@@ -95,6 +127,7 @@ namespace ClienteWeb.Controllers
                 usuario.Headers.Clear();//borra datos anteriores
                 //establece el tipo de dato de tranferencia
                 usuario.Headers[HttpRequestHeader.ContentType] = jsonMediaType;
+                usuario.Headers[HttpRequestHeader.Authorization] = "Bearer "+token;
                 //typo de decodificador reconocimiento carecteres especiales
                 usuario.Encoding = UTF8Encoding.UTF8;
                 string rutacompleta = RutaApi + controladora + "/" + id;
@@ -118,10 +151,12 @@ namespace ClienteWeb.Controllers
         {
             try
             {
+                string token = GetToken();
                 using (WebClient usuario = new WebClient())
                 {
                     usuario.Headers.Clear();
                     usuario.Headers[HttpRequestHeader.ContentType] = jsonMediaType;
+                    usuario.Headers[HttpRequestHeader.Authorization] = "Bearer "+token;
                     usuario.Encoding = UTF8Encoding.UTF8;
                     string controladora = "Usuario";
                     string rutaCompleta = RutaApi+controladora+"/"+id;
@@ -146,12 +181,14 @@ namespace ClienteWeb.Controllers
         // GET: UsuariosControllers/Delete/5
         public ActionResult Delete(int id)
         {
+            string token = GetToken();
             string controladora = "Usuario";
             Usuarios users = new Usuarios();
             using (WebClient usuario = new WebClient())
             {
                 usuario.Headers.Clear();//borra datos anteriores
                 //establece el tipo de dato de tranferencia
+                usuario.Headers[HttpRequestHeader.Authorization] = "Bearer "+token;
                 usuario.Headers[HttpRequestHeader.ContentType] = jsonMediaType;
                 //typo de decodificador reconocimiento carecteres especiales
                 usuario.Encoding = UTF8Encoding.UTF8;
@@ -172,9 +209,11 @@ namespace ClienteWeb.Controllers
         {
             try
             {
+                string token = GetToken();
                 using (WebClient usuario = new WebClient())
                 {
                     usuario.Headers.Clear();
+                    usuario.Headers[HttpRequestHeader.Authorization] = "Bearer "+token;
                     usuario.Headers[HttpResponseHeader.ContentType] = jsonMediaType;
                     usuario.Encoding = Encoding.UTF8;
                     string controladora = "Usuario";

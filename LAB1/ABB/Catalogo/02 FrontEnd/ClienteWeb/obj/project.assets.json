@@ -6537,37 +6537,35 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Alexa\\.nuget\\packages\\": {}
+    "/home/luciano/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\02 FrontEnd\\ClienteWeb\\ClienteWeb.csproj",
+      "projectUniqueName": "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/02 FrontEnd/ClienteWeb/ClienteWeb.csproj",
       "projectName": "ClienteWeb",
-      "projectPath": "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\02 FrontEnd\\ClienteWeb\\ClienteWeb.csproj",
-      "packagesPath": "C:\\Users\\Alexa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\02 FrontEnd\\ClienteWeb\\obj\\",
+      "projectPath": "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/02 FrontEnd/ClienteWeb/ClienteWeb.csproj",
+      "packagesPath": "/home/luciano/.nuget/packages/",
+      "outputPath": "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/02 FrontEnd/ClienteWeb/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Alexa\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/luciano/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\01 Backend\\LogicaNegocio\\LogicaNegocio.csproj": {
-              "projectPath": "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\01 Backend\\LogicaNegocio\\LogicaNegocio.csproj"
+            "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/01 Backend/LogicaNegocio/LogicaNegocio.csproj": {
+              "projectPath": "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/01 Backend/LogicaNegocio/LogicaNegocio.csproj"
             },
-            "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\03 Transversal\\Entidades\\Entidades.csproj": {
-              "projectPath": "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\03 Transversal\\Entidades\\Entidades.csproj"
+            "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Entidades/Entidades.csproj": {
+              "projectPath": "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Entidades/Entidades.csproj"
             }
           }
         }
@@ -6576,11 +6574,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -6615,7 +6608,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.105/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
