@@ -8,12 +8,14 @@ using System.Xml.Serialization;
 using ABB.Catalogo.LogicaNegocio.Core;
 using System.Text.Json;
 using LogicaNegocio.Core;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ABB.Catalogo.WebServicesABB.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("/Api/Producto")]
-    public class ProductoController
+    public class ProductoController : Controller
     {
         [HttpGet]
         public IEnumerable<Producto> Get()
