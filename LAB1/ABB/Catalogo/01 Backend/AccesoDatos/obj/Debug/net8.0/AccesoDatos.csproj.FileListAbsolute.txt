@@ -30,22 +30,6 @@ C:\Users\Alexa\OneDrive - Universidad Tecnologica del Peru\Desktop\Nueva carpeta
 C:\Users\Alexa\OneDrive - Universidad Tecnologica del Peru\Desktop\Nueva carpeta\LABSDWS\LAB1\ABB\Catalogo\01 Backend\AccesoDatos\obj\Debug\net8.0\refint\AccesoDatos.dll
 C:\Users\Alexa\OneDrive - Universidad Tecnologica del Peru\Desktop\Nueva carpeta\LABSDWS\LAB1\ABB\Catalogo\01 Backend\AccesoDatos\obj\Debug\net8.0\AccesoDatos.pdb
 C:\Users\Alexa\OneDrive - Universidad Tecnologica del Peru\Desktop\Nueva carpeta\LABSDWS\LAB1\ABB\Catalogo\01 Backend\AccesoDatos\obj\Debug\net8.0\ref\AccesoDatos.dll
-C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\01 Backend\AccesoDatos\bin\Debug\net8.0\AccesoDatos.deps.json
-C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\01 Backend\AccesoDatos\bin\Debug\net8.0\AccesoDatos.dll
-C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\01 Backend\AccesoDatos\bin\Debug\net8.0\AccesoDatos.pdb
-C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\01 Backend\AccesoDatos\bin\Debug\net8.0\Entidades.dll
-C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\01 Backend\AccesoDatos\bin\Debug\net8.0\Entidades.pdb
-C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\01 Backend\AccesoDatos\obj\Debug\net8.0\AccesoDatos.csproj.AssemblyReference.cache
-C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\01 Backend\AccesoDatos\obj\Debug\net8.0\AccesoDatos.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\01 Backend\AccesoDatos\obj\Debug\net8.0\AccesoDatos.AssemblyInfoInputs.cache
-C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\01 Backend\AccesoDatos\obj\Debug\net8.0\AccesoDatos.AssemblyInfo.cs
-C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\01 Backend\AccesoDatos\obj\Debug\net8.0\AccesoDatos.csproj.CoreCompileInputs.cache
-C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\01 Backend\AccesoDatos\obj\Debug\net8.0\AccesoDatos.sourcelink.json
-C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\01 Backend\AccesoDatos\obj\Debug\net8.0\AccesoDa.B2719C34.Up2Date
-C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\01 Backend\AccesoDatos\obj\Debug\net8.0\AccesoDatos.dll
-C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\01 Backend\AccesoDatos\obj\Debug\net8.0\refint\AccesoDatos.dll
-C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\01 Backend\AccesoDatos\obj\Debug\net8.0\AccesoDatos.pdb
-C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\01 Backend\AccesoDatos\obj\Debug\net8.0\ref\AccesoDatos.dll
 C:\Users\AULAFISI\LABSDWS\LAB1\ABB\Catalogo\01 Backend\AccesoDatos\obj\Debug\net8.0\AccesoDatos.dll
 C:\Users\AULAFISI\LABSDWS\LAB1\ABB\Catalogo\01 Backend\AccesoDatos\obj\Debug\net8.0\AccesoDatos.pdb
 C:\Users\AULAFISI\LABSDWS\LAB1\ABB\Catalogo\01 Backend\AccesoDatos\bin\Debug\net8.0\AccesoDatos.deps.json
@@ -62,5 +46,3 @@ C:\Users\AULAFISI\LABSDWS\LAB1\ABB\Catalogo\01 Backend\AccesoDatos\obj\Debug\net
 C:\Users\AULAFISI\LABSDWS\LAB1\ABB\Catalogo\01 Backend\AccesoDatos\obj\Debug\net8.0\AccesoDa.B2719C34.Up2Date
 C:\Users\AULAFISI\LABSDWS\LAB1\ABB\Catalogo\01 Backend\AccesoDatos\obj\Debug\net8.0\refint\AccesoDatos.dll
 C:\Users\AULAFISI\LABSDWS\LAB1\ABB\Catalogo\01 Backend\AccesoDatos\obj\Debug\net8.0\ref\AccesoDatos.dll
-C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\01 Backend\AccesoDatos\bin\Debug\net8.0\Utiles.dll
-C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\01 Backend\AccesoDatos\bin\Debug\net8.0\Utiles.pdb
