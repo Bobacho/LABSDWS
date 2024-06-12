@@ -14,6 +14,7 @@
 /home/luciano/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/obj/Debug/net8.0/refint/AccesoDatos.dll
 /home/luciano/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/obj/Debug/net8.0/AccesoDatos.pdb
 /home/luciano/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/obj/Debug/net8.0/ref/AccesoDatos.dll
+<<<<<<< HEAD
 C:\Users\Alexa\OneDrive - Universidad Tecnologica del Peru\Desktop\Nueva carpeta\LABSDWS\LAB1\ABB\Catalogo\01 Backend\AccesoDatos\bin\Debug\net8.0\AccesoDatos.deps.json
 C:\Users\Alexa\OneDrive - Universidad Tecnologica del Peru\Desktop\Nueva carpeta\LABSDWS\LAB1\ABB\Catalogo\01 Backend\AccesoDatos\bin\Debug\net8.0\AccesoDatos.dll
 C:\Users\Alexa\OneDrive - Universidad Tecnologica del Peru\Desktop\Nueva carpeta\LABSDWS\LAB1\ABB\Catalogo\01 Backend\AccesoDatos\bin\Debug\net8.0\AccesoDatos.pdb
@@ -46,3 +47,39 @@ C:\Users\AULAFISI\LABSDWS\LAB1\ABB\Catalogo\01 Backend\AccesoDatos\obj\Debug\net
 C:\Users\AULAFISI\LABSDWS\LAB1\ABB\Catalogo\01 Backend\AccesoDatos\obj\Debug\net8.0\AccesoDa.B2719C34.Up2Date
 C:\Users\AULAFISI\LABSDWS\LAB1\ABB\Catalogo\01 Backend\AccesoDatos\obj\Debug\net8.0\refint\AccesoDatos.dll
 C:\Users\AULAFISI\LABSDWS\LAB1\ABB\Catalogo\01 Backend\AccesoDatos\obj\Debug\net8.0\ref\AccesoDatos.dll
+=======
+C:/Users/Alexa/OneDrive - Universidad Tecnologica del Peru/Desktop/Nueva carpeta/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/bin/Debug/net8.0/AccesoDatos.deps.json
+C:/Users/Alexa/OneDrive - Universidad Tecnologica del Peru/Desktop/Nueva carpeta/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/bin/Debug/net8.0/AccesoDatos.dll
+C:/Users/Alexa/OneDrive - Universidad Tecnologica del Peru/Desktop/Nueva carpeta/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/bin/Debug/net8.0/AccesoDatos.pdb
+C:/Users/Alexa/OneDrive - Universidad Tecnologica del Peru/Desktop/Nueva carpeta/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/bin/Debug/net8.0/Entidades.dll
+C:/Users/Alexa/OneDrive - Universidad Tecnologica del Peru/Desktop/Nueva carpeta/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/bin/Debug/net8.0/Entidades.pdb
+C:/Users/Alexa/OneDrive - Universidad Tecnologica del Peru/Desktop/Nueva carpeta/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/obj/Debug/net8.0/AccesoDatos.csproj.AssemblyReference.cache
+C:/Users/Alexa/OneDrive - Universidad Tecnologica del Peru/Desktop/Nueva carpeta/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/obj/Debug/net8.0/AccesoDatos.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Alexa/OneDrive - Universidad Tecnologica del Peru/Desktop/Nueva carpeta/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/obj/Debug/net8.0/AccesoDatos.AssemblyInfoInputs.cache
+C:/Users/Alexa/OneDrive - Universidad Tecnologica del Peru/Desktop/Nueva carpeta/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/obj/Debug/net8.0/AccesoDatos.AssemblyInfo.cs
+C:/Users/Alexa/OneDrive - Universidad Tecnologica del Peru/Desktop/Nueva carpeta/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/obj/Debug/net8.0/AccesoDatos.csproj.CoreCompileInputs.cache
+C:/Users/Alexa/OneDrive - Universidad Tecnologica del Peru/Desktop/Nueva carpeta/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/obj/Debug/net8.0/AccesoDatos.sourcelink.json
+C:/Users/Alexa/OneDrive - Universidad Tecnologica del Peru/Desktop/Nueva carpeta/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/obj/Debug/net8.0/AccesoDa.B2719C34.Up2Date
+C:/Users/Alexa/OneDrive - Universidad Tecnologica del Peru/Desktop/Nueva carpeta/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/obj/Debug/net8.0/AccesoDatos.dll
+C:/Users/Alexa/OneDrive - Universidad Tecnologica del Peru/Desktop/Nueva carpeta/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/obj/Debug/net8.0/refint/AccesoDatos.dll
+C:/Users/Alexa/OneDrive - Universidad Tecnologica del Peru/Desktop/Nueva carpeta/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/obj/Debug/net8.0/AccesoDatos.pdb
+C:/Users/Alexa/OneDrive - Universidad Tecnologica del Peru/Desktop/Nueva carpeta/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/obj/Debug/net8.0/ref/AccesoDatos.dll
+C:/Users/AULAFISI/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/obj/Debug/net8.0/AccesoDatos.dll
+C:/Users/AULAFISI/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/obj/Debug/net8.0/AccesoDatos.pdb
+C:/Users/AULAFISI/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/bin/Debug/net8.0/AccesoDatos.deps.json
+C:/Users/AULAFISI/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/bin/Debug/net8.0/AccesoDatos.dll
+C:/Users/AULAFISI/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/bin/Debug/net8.0/AccesoDatos.pdb
+C:/Users/AULAFISI/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/bin/Debug/net8.0/Entidades.dll
+C:/Users/AULAFISI/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/bin/Debug/net8.0/Entidades.pdb
+C:/Users/AULAFISI/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/obj/Debug/net8.0/AccesoDatos.csproj.AssemblyReference.cache
+C:/Users/AULAFISI/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/obj/Debug/net8.0/AccesoDatos.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/AULAFISI/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/obj/Debug/net8.0/AccesoDatos.AssemblyInfoInputs.cache
+C:/Users/AULAFISI/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/obj/Debug/net8.0/AccesoDatos.AssemblyInfo.cs
+C:/Users/AULAFISI/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/obj/Debug/net8.0/AccesoDatos.csproj.CoreCompileInputs.cache
+C:/Users/AULAFISI/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/obj/Debug/net8.0/AccesoDatos.sourcelink.json
+C:/Users/AULAFISI/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/obj/Debug/net8.0/AccesoDa.B2719C34.Up2Date
+C:/Users/AULAFISI/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/obj/Debug/net8.0/refint/AccesoDatos.dll
+C:/Users/AULAFISI/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/obj/Debug/net8.0/ref/AccesoDatos.dll
+/home/luciano/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/bin/Debug/net8.0/Utiles.dll
+/home/luciano/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/bin/Debug/net8.0/Utiles.pdb
+>>>>>>> 4086b85e9279df6a470695c267ed6c453c4292e5

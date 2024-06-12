@@ -1,4 +1,4 @@
-﻿namespace Entidades;
+namespace Entidades;
 
 public class Class1
 {

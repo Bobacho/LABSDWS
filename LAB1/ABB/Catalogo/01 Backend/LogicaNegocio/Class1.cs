@@ -1,4 +1,4 @@
-﻿namespace LogicaNegocio;
+namespace LogicaNegocio;
 
 public class Class1
 {

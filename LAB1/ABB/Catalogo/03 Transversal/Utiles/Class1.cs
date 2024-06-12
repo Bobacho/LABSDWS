@@ -1,4 +1,4 @@
-﻿namespace Utiles;
+namespace Utiles;
 
 public class Class1
 {

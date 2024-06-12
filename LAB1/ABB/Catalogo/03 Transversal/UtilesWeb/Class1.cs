@@ -1,4 +1,4 @@
-﻿namespace UtilesWeb;
+namespace UtilesWeb;
 
 public class Class1
 {
