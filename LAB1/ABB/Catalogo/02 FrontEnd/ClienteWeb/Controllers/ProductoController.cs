@@ -9,7 +9,7 @@ namespace ClienteWeb.Controllers
 {
     public class ProductoController : Controller
     {
-        string RutaApi = "http://localhost:5202/Api/";
+        string RutaApi = "http://localhost/WebServiceABB/Api/";
         string jsonMediaType = "application/json";
         // GET: ProductoController
         public ActionResult Index()

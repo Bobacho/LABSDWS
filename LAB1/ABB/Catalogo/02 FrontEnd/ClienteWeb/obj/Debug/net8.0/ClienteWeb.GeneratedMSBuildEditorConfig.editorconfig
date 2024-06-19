@@ -26,6 +26,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\02 FrontEnd\ClienteWeb
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Alexa/source/repos/ABB.Catalogo/LABSDWS/LAB1/ABB/Catalogo/02 FrontEnd/ClienteWeb/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Alexa/source/repos/ABB.Catalogo/LABSDWS/LAB1/ABB/Catalogo/02 FrontEnd/ClienteWeb/Views/Producto/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
