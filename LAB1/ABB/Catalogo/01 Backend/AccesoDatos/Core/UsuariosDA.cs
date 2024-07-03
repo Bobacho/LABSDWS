@@ -89,7 +89,7 @@ namespace AccesoDatos.Core
             SqlConnection connection = new SqlConnection(builder.ConnectionString);
             SqlCommand command = new SqlCommand("paUsuario_BuscaUserId", connection);
             command.CommandType = CommandType.StoredProcedure;
-            command.Parameters.AddWithValue("@ParamUsuario",id);
+            command.Parameters.AddWithValue("@ParamUsuario", id);
             connection.Open();
             SqlDataReader reader = command.ExecuteReader();
             while (reader.Read())
@@ -98,6 +98,23 @@ namespace AccesoDatos.Core
             }
             connection.Close();
             return entidad;
+        }
+        public Usuarios BuscarUsuario(Usuarios usuario)
+        {
+            Usuarios SegSSOMUsuario = null;
+            SqlConnection connection = new SqlConnection(builder.ConnectionString);
+            SqlCommand command = new SqlCommand("paUsuario_BuscaCodUserClave", connection);
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.AddWithValue("@Clave", usuario.Clave);
+            command.Parameters.AddWithValue("@CodUsuario", usuario.CodUsuario);
+            connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                SegSSOMUsuario = LlenarEntidad(reader);
+            }
+            connection.Close();
+            return SegSSOMUsuario;
         }
         public int GetUsuarioId(string pUsuario, string pPassword)
         {
@@ -153,7 +170,7 @@ namespace AccesoDatos.Core
             catch (Exception e)
             {
                 string innerExcetion = e.InnerException == null ? "" : e.InnerException.ToString();
-                Console.WriteLine("Error en DA:"+innerExcetion);
+                Console.WriteLine("Error en DA:" + innerExcetion);
                 return new Usuarios();
             }
         }
@@ -207,12 +224,12 @@ namespace AccesoDatos.Core
                 SqlConnection connection = new SqlConnection(builder.ConnectionString);
                 SqlCommand command = new SqlCommand("DELETE FROM USUARIO WHERE IdUsuario = @IdUsuario;", connection);
                 command.CommandType = CommandType.Text;
-                command.Parameters.AddWithValue("@IdUsuario",id);
+                command.Parameters.AddWithValue("@IdUsuario", id);
                 connection.Open();
                 command.ExecuteNonQuery();
                 connection.Close();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 string innerException = ex.InnerException == null ? "" : ex.InnerException.ToString();
                 Console.WriteLine(innerException);

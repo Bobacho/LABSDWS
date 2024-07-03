@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using WebServicesAbb.Filters;
+using Entidades.Core;
 
 const string JWT_AUDIENCE_TOKEN = "AvanzaSoluciones.com";
 const string JWT_ISSUER_TOKEN = "GrupoMuya.com";
@@ -18,6 +19,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddControllers().AddXmlSerializerFormatters();
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddScoped<VariablesWeb>();
 builder.Services.AddSwaggerGen();
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
     {

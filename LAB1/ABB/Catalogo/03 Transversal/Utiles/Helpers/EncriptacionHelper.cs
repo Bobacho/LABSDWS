@@ -32,7 +32,7 @@ rijndaelCipher.CreateEncryptor(secretKey.GetBytes(32), secretKey.GetBytes(16)))
         }
         private static Rfc2898DeriveBytes GetSecretKey()
         {
-            const string encryptionKey = " T @ll3rN3t2018" ;
+            const string encryptionKey = " T @ll3rN3t2018";
             byte[] salt = Encoding.UTF8.GetBytes(encryptionKey);
             var secretKey = new Rfc2898DeriveBytes(encryptionKey, salt);
             return secretKey;
@@ -54,7 +54,7 @@ rijndaelCipher.CreateEncryptor(secretKey.GetBytes(32), secretKey.GetBytes(16)))
             MD5 md5Hasher = MD5.Create();
             Byte[] data = md5Hasher.ComputeHash(Encoding.Default.GetBytes(key));
             StringBuilder sBuilder = new StringBuilder();
-            for (int i = 0; i <data.Length; i++)
+            for (int i = 0; i < data.Length; i++)
             {
                 sBuilder.Append(data[i].ToString("x2"));
             }

@@ -1,32 +1,48 @@
 using Entidades.Core;
 using AccesoDatos.Core;
 
-namespace ABB.Catalogo.LogicaNegocio.Core{
-    public class UsuariosLN{
+namespace ABB.Catalogo.LogicaNegocio.Core
+{
+    public class UsuariosLN
+    {
         public List<Usuarios> ListarUsuarios()
         {
-            List<Usuarios> lista = new List<Usuarios> ();
-            try{
+            List<Usuarios> lista = new List<Usuarios>();
+            try
+            {
                 UsuariosDA usuarios = new UsuariosDA();
                 return usuarios.ListarUsuarios();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                string innerException = (ex.InnerException == null) 
+                string innerException = (ex.InnerException == null)
                 ? "" : ex.InnerException.ToString();
                 return lista;
             }
         }
-        public int GetUsuarioId(string pUsuario,string pPassword)
+        public Usuarios BuscarUsuario(Usuarios Usuario)
         {
-            try{
-                UsuariosDA usuario = new UsuariosDA();
-                return usuario.GetUsuarioId(pUsuario,pPassword);
+            try
+            {
+                return new UsuariosDA().BuscarUsuario(Usuario);
             }
             catch (Exception ex)
             {
-                string innerException = ex.InnerException==null ? "":ex.InnerException.ToString();
-                Console.WriteLine("Error en LN:"+innerException);
+                //Log.Error(ex);
+                throw;
+            }
+        }
+        public int GetUsuarioId(string pUsuario, string pPassword)
+        {
+            try
+            {
+                UsuariosDA usuario = new UsuariosDA();
+                return usuario.GetUsuarioId(pUsuario, pPassword);
+            }
+            catch (Exception ex)
+            {
+                string innerException = ex.InnerException == null ? "" : ex.InnerException.ToString();
+                Console.WriteLine("Error en LN:" + innerException);
                 return -1;
             }
         }
@@ -37,7 +53,8 @@ namespace ABB.Catalogo.LogicaNegocio.Core{
             {
                 UsuariosDA usuariosDA = new UsuariosDA();
                 return usuariosDA.GetUsuarioById(id);
-            }catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 Console.WriteLine(ex);
                 return null;
@@ -50,7 +67,7 @@ namespace ABB.Catalogo.LogicaNegocio.Core{
             {
                 return new UsuariosDA().InsertarUsuario(usuarios);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 string innerException = ex.InnerException == null ? "" : ex.InnerException.ToString();
                 Console.WriteLine(innerException);
@@ -58,17 +75,17 @@ namespace ABB.Catalogo.LogicaNegocio.Core{
             }
         }
 
-        public Usuarios ModificarUsuario(int id,Usuarios usuarios)
+        public Usuarios ModificarUsuario(int id, Usuarios usuarios)
         {
             try
             {
-                return new UsuariosDA().ModificarUsuario(id,usuarios);
+                return new UsuariosDA().ModificarUsuario(id, usuarios);
             }
             catch (Exception ex)
             {
-                string innerException = ex.InnerException == null ? "" : ex.InnerException.ToString() ;
-                Console.WriteLine("Error en LN:"+innerException);
-                return new Usuarios(); 
+                string innerException = ex.InnerException == null ? "" : ex.InnerException.ToString();
+                Console.WriteLine("Error en LN:" + innerException);
+                return new Usuarios();
             }
         }
 
@@ -78,7 +95,7 @@ namespace ABB.Catalogo.LogicaNegocio.Core{
             {
                 new UsuariosDA().BorrarUsuario(id);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 string innerException = ex.InnerException == null ? "" : ex.InnerException.ToString();
                 Console.WriteLine(innerException);

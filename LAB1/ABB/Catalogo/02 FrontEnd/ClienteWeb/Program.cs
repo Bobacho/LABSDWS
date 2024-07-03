@@ -1,11 +1,25 @@
 using Microsoft.Extensions.FileProviders;
+using log4net;
+using log4net.Config;
+using System.IO;
+using System.Reflection;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.Extensions.Logging;
 
 var builder = WebApplication.CreateBuilder(args);
 
+var logRepository = LogManager.GetRepository(Assembly.GetEntryAssembly());
+XmlConfigurator.Configure(logRepository, new FileInfo("log4net.config"));
 // Add services to the container.
 builder.Services.AddHttpClient();
+builder.Logging.AddLog4Net();
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.LoginPath = "/Login/Index";
+        options.LogoutPath = "/Login/CerrarSesion";
+    });
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
