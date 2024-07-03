@@ -7952,32 +7952,34 @@
     ]
   },
   "packageFolders": {
-    "/home/luciano/.nuget/packages/": {}
+    "C:\\Users\\Alexa\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Utiles/Utiles.csproj",
+      "projectUniqueName": "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\03 Transversal\\Utiles\\Utiles.csproj",
       "projectName": "Utiles",
-      "projectPath": "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Utiles/Utiles.csproj",
-      "packagesPath": "/home/luciano/.nuget/packages/",
-      "outputPath": "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Utiles/obj/",
+      "projectPath": "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\03 Transversal\\Utiles\\Utiles.csproj",
+      "packagesPath": "C:\\Users\\Alexa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\03 Transversal\\Utiles\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/luciano/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Alexa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Entidades/Entidades.csproj": {
-              "projectPath": "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Entidades/Entidades.csproj"
+            "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\03 Transversal\\Entidades\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\03 Transversal\\Entidades\\Entidades.csproj"
             }
           }
         }
@@ -7986,6 +7988,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -8017,7 +8024,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.105/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   },
@@ -8026,7 +8033,7 @@
       "code": "NU1604",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Project dependency Microsoft.AspNetCore.Mvc does not contain an inclusive lower bound. Include a lower bound in the dependency version to ensure consistent restore results.",
+      "message": "La dependencia del proyecto Microsoft.AspNetCore.Mvc no contiene un límite inferior inclusivo. Inclúyalo en la versión de la dependencia para garantizar resultados de restauración coherentes.",
       "libraryId": "Microsoft.AspNetCore.Mvc",
       "targetGraphs": [
         ".NETCoreApp,Version=v8.0"
@@ -8036,7 +8043,7 @@
       "code": "NU1604",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Project dependency Microsoft.AspNetCore.Mvc.TagHelpers does not contain an inclusive lower bound. Include a lower bound in the dependency version to ensure consistent restore results.",
+      "message": "La dependencia del proyecto Microsoft.AspNetCore.Mvc.TagHelpers no contiene un límite inferior inclusivo. Inclúyalo en la versión de la dependencia para garantizar resultados de restauración coherentes.",
       "libraryId": "Microsoft.AspNetCore.Mvc.TagHelpers",
       "targetGraphs": [
         ".NETCoreApp,Version=v8.0"
@@ -8046,7 +8053,7 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNetCore.Mvc' 1.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-6xh7-4v2w-36q6",
+      "message": "El paquete \"Microsoft.AspNetCore.Mvc\" 1.0.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-6xh7-4v2w-36q6",
       "libraryId": "Microsoft.AspNetCore.Mvc",
       "targetGraphs": [
         "net8.0"
@@ -8056,7 +8063,7 @@
       "code": "NU1902",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNetCore.Mvc' 1.0.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-ch6p-4jcm-h8vh",
+      "message": "El paquete \"Microsoft.AspNetCore.Mvc\" 1.0.0 tiene una vulnerabilidad de gravedad moderada conocida, https://github.com/advisories/GHSA-ch6p-4jcm-h8vh",
       "libraryId": "Microsoft.AspNetCore.Mvc",
       "targetGraphs": [
         "net8.0"
@@ -8066,17 +8073,7 @@
       "code": "NU1902",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNetCore.Mvc' 1.0.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-j8f4-2w4p-mhjc",
-      "libraryId": "Microsoft.AspNetCore.Mvc",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNetCore.Mvc' 1.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-qhqf-ghgh-x2m4",
+      "message": "El paquete \"Microsoft.AspNetCore.Mvc\" 1.0.0 tiene una vulnerabilidad de gravedad moderada conocida, https://github.com/advisories/GHSA-j8f4-2w4p-mhjc",
       "libraryId": "Microsoft.AspNetCore.Mvc",
       "targetGraphs": [
         "net8.0"
@@ -8086,7 +8083,17 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNetCore.Mvc.TagHelpers' 1.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-6xh7-4v2w-36q6",
+      "message": "El paquete \"Microsoft.AspNetCore.Mvc\" 1.0.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-qhqf-ghgh-x2m4",
+      "libraryId": "Microsoft.AspNetCore.Mvc",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"Microsoft.AspNetCore.Mvc.TagHelpers\" 1.0.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-6xh7-4v2w-36q6",
       "libraryId": "Microsoft.AspNetCore.Mvc.TagHelpers",
       "targetGraphs": [
         "net8.0"
@@ -8096,7 +8103,7 @@
       "code": "NU1902",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNetCore.Mvc.TagHelpers' 1.0.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-ch6p-4jcm-h8vh",
+      "message": "El paquete \"Microsoft.AspNetCore.Mvc.TagHelpers\" 1.0.0 tiene una vulnerabilidad de gravedad moderada conocida, https://github.com/advisories/GHSA-ch6p-4jcm-h8vh",
       "libraryId": "Microsoft.AspNetCore.Mvc.TagHelpers",
       "targetGraphs": [
         "net8.0"
@@ -8106,7 +8113,7 @@
       "code": "NU1902",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNetCore.Mvc.TagHelpers' 1.0.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-j8f4-2w4p-mhjc",
+      "message": "El paquete \"Microsoft.AspNetCore.Mvc.TagHelpers\" 1.0.0 tiene una vulnerabilidad de gravedad moderada conocida, https://github.com/advisories/GHSA-j8f4-2w4p-mhjc",
       "libraryId": "Microsoft.AspNetCore.Mvc.TagHelpers",
       "targetGraphs": [
         "net8.0"
@@ -8116,7 +8123,7 @@
       "code": "NU1903",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNetCore.Mvc.TagHelpers' 1.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-qhqf-ghgh-x2m4",
+      "message": "El paquete \"Microsoft.AspNetCore.Mvc.TagHelpers\" 1.0.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-qhqf-ghgh-x2m4",
       "libraryId": "Microsoft.AspNetCore.Mvc.TagHelpers",
       "targetGraphs": [
         "net8.0"
@@ -8126,7 +8133,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.WebApi.Core 5.3.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "message": "El paquete \"Microsoft.AspNet.WebApi.Core 5.3.0\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net8.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
       "libraryId": "Microsoft.AspNet.WebApi.Core",
       "targetGraphs": [
         "net8.0"

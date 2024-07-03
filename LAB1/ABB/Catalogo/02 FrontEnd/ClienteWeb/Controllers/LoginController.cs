@@ -24,6 +24,7 @@ namespace ClienteWeb.Controllers
         public ActionResult Index()
         {
             Usuarios u = new Usuarios(); // Creating a new instance of Usuarios
+            Console.WriteLine("Index Get");
             _log.LogDebug("Index Get");
             return View(u); // Returning a view with Usuarios as the model
         }
@@ -31,18 +32,16 @@ namespace ClienteWeb.Controllers
         [HttpPost]
         public async Task<ActionResult> Index(Usuarios usuario)
         {
+            Console.WriteLine(usuario.CodUsuario);
             if (string.IsNullOrEmpty(usuario.CodUsuario) || string.IsNullOrEmpty(usuario.ClaveTxt))
             {
                 ModelState.AddModelError("*", "Debe llenar el usuario o clave");
             }
-
-            if (ModelState.IsValid)
-            {
+            Console.WriteLine(ModelState.IsValid);
                 try
                 {
                     usuario.Clave = EncriptacionHelper.EncriptarByte(usuario.ClaveTxt);
                     Usuarios res = new UsuariosLN().BuscarUsuario(usuario);
-
                     if (res != null && res.IdUsuario > 0)
                     {
                         var claims = new List<Claim>
@@ -59,7 +58,7 @@ namespace ClienteWeb.Controllers
                         VariablesWeb.gOpciones = lista;
                         _log.LogDebug("Llego las opciones. " + VariablesWeb.gOpciones.Count().ToString());
                         VariablesWeb.gUsuario = res;
-                        return RedirectToAction("Index", "Home");
+                        return RedirectToAction("Index","Home");
                     }
                     else
                     {
@@ -68,10 +67,11 @@ namespace ClienteWeb.Controllers
                 }
                 catch (Exception ex)
                 {
+                    Console.WriteLine(ex.Message);
+                    Console.WriteLine(ex.StackTrace);
                     ModelState.AddModelError("*", ex.Message);
                     _log.LogError($"Error during login: {ex.Message}");
                 }
-            }
             return View(usuario);
         }
 

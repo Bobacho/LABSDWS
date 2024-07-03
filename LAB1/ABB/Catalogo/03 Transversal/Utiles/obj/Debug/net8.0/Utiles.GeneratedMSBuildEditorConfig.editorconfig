@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Utiles
-build_property.ProjectDir = /home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Utiles/
+build_property.ProjectDir = C:\Users\Alexa\source\repos\ABB.Catalogo\LABSDWS\LAB1\ABB\Catalogo\03 Transversal\Utiles\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

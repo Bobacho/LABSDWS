@@ -105,8 +105,8 @@ namespace AccesoDatos.Core
             SqlConnection connection = new SqlConnection(builder.ConnectionString);
             SqlCommand command = new SqlCommand("paUsuario_BuscaCodUserClave", connection);
             command.CommandType = CommandType.StoredProcedure;
-            command.Parameters.AddWithValue("@Clave", usuario.Clave);
-            command.Parameters.AddWithValue("@CodUsuario", usuario.CodUsuario);
+            command.Parameters.AddWithValue("@ParamPass", usuario.Clave);
+            command.Parameters.AddWithValue("@ParamUsuario", usuario.CodUsuario);
             connection.Open();
             SqlDataReader reader = command.ExecuteReader();
             while (reader.Read())

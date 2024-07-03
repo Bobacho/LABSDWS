@@ -12,7 +12,7 @@ namespace ClienteWeb.Controllers
 {
     public class UsuariosController : Controller
     {
-        string RutaApi = "http://localhost:60344/Api/";
+        string RutaApi = "https://localhost:60433/Api/";
         string jsonMediaType = "application/json";
         public readonly HttpClient httpClient = new HttpClient();
 

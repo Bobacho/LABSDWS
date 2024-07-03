@@ -8667,35 +8667,37 @@
     ]
   },
   "packageFolders": {
-    "/home/luciano/.nuget/packages/": {}
+    "C:\\Users\\Alexa\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/AccesoDatos.csproj",
+      "projectUniqueName": "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\01 Backend\\AccesoDatos\\AccesoDatos.csproj",
       "projectName": "AccesoDatos",
-      "projectPath": "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/AccesoDatos.csproj",
-      "packagesPath": "/home/luciano/.nuget/packages/",
-      "outputPath": "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/01 Backend/AccesoDatos/obj/",
+      "projectPath": "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\01 Backend\\AccesoDatos\\AccesoDatos.csproj",
+      "packagesPath": "C:\\Users\\Alexa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\01 Backend\\AccesoDatos\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/luciano/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Alexa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Entidades/Entidades.csproj": {
-              "projectPath": "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Entidades/Entidades.csproj"
+            "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\03 Transversal\\Entidades\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\03 Transversal\\Entidades\\Entidades.csproj"
             },
-            "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Utiles/Utiles.csproj": {
-              "projectPath": "/home/luciano/LABSDWS/LAB1/ABB/Catalogo/03 Transversal/Utiles/Utiles.csproj"
+            "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\03 Transversal\\Utiles\\Utiles.csproj": {
+              "projectPath": "C:\\Users\\Alexa\\source\\repos\\ABB.Catalogo\\LABSDWS\\LAB1\\ABB\\Catalogo\\03 Transversal\\Utiles\\Utiles.csproj"
             }
           }
         }
@@ -8704,6 +8706,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -8743,7 +8750,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.105/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   },
@@ -8752,7 +8759,7 @@
       "code": "NU1602",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Utiles does not provide an inclusive lower bound for dependency Microsoft.AspNetCore.Mvc. An approximate best match of Microsoft.AspNetCore.Mvc 1.0.0 was resolved.",
+      "message": "Utiles no proporciona un límite inferior inclusivo para la dependencia Microsoft.AspNetCore.Mvc. Se resolvió una mejor coincidencia aproximada de Microsoft.AspNetCore.Mvc 1.0.0.",
       "libraryId": "Microsoft.AspNetCore.Mvc",
       "targetGraphs": [
         "net8.0"
@@ -8762,7 +8769,7 @@
       "code": "NU1602",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Utiles does not provide an inclusive lower bound for dependency Microsoft.AspNetCore.Mvc.TagHelpers. An approximate best match of Microsoft.AspNetCore.Mvc.TagHelpers 1.0.0 was resolved.",
+      "message": "Utiles no proporciona un límite inferior inclusivo para la dependencia Microsoft.AspNetCore.Mvc.TagHelpers. Se resolvió una mejor coincidencia aproximada de Microsoft.AspNetCore.Mvc.TagHelpers 1.0.0.",
       "libraryId": "Microsoft.AspNetCore.Mvc.TagHelpers",
       "targetGraphs": [
         "net8.0"
@@ -8772,7 +8779,7 @@
       "code": "NU1902",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Azure.Identity' 1.11.3 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-m5vv-6r4h-3vj9",
+      "message": "El paquete \"Azure.Identity\" 1.11.3 tiene una vulnerabilidad de gravedad moderada conocida, https://github.com/advisories/GHSA-m5vv-6r4h-3vj9",
       "libraryId": "Azure.Identity",
       "targetGraphs": [
         "net8.0"
@@ -8782,7 +8789,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.WebApi.Core 5.3.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "message": "El paquete \"Microsoft.AspNet.WebApi.Core 5.3.0\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net8.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
       "libraryId": "Microsoft.AspNet.WebApi.Core",
       "targetGraphs": [
         "net8.0"
